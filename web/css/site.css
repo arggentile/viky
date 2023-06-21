@@ -6,6 +6,13 @@
     font-weight: normal;
 }
 @font-face {
+    font-family: 'OverpassBlack';
+    src: url('/fonts/overpass/Overpass-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: 'OverpassBold';
     src: url('/fonts/overpass/Overpass-Bold.ttf') format('truetype');
     font-style: normal;
@@ -13,6 +20,34 @@
 }
 /* FIN fonts */
 
+
+
+
+body {
+    font-family: 'Overpass';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 50px; /* Ajusta la altura de la cabecera según tus necesidades */
+    background-color: #f8f9fa;
+    /* Agrega cualquier otro estilo deseado para la cabecera */
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-image: url("/images/pieagus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* MENU */
 
 .nav-item > a{
     font-family: 'OverpassBold';
@@ -30,11 +65,6 @@
     color: #fff !important;
 }
 
-#footer{
-    font-family: 'Overpass';
-}
-
-
 #btn-inicio-session{
     text-transform: uppercase;
     background-color: #2B454E;
@@ -51,6 +81,48 @@
     border-color: #2B454E;
 }
 
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+ outline: none;
+}
+/* FIN MENU */
+
+.text-overpassbold{
+    font-family: 'OverpassBold';
+}
+.text-overpassbalck{
+    font-family: 'OverpassBlack';
+}
+.text-overpassregular{
+    font-family: 'Overpass';
+}
+.text-blue-site{
+    color: #2B454E;
+}
+
+
+
+
+.bodyinicio{
+    background-image: url("/images/inicionuevo.png");
+    height: calc(100vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.headerinicio 
+{
+    background-color: transparent !important;
+}
+
+
+
 #btn-asociate{
     text-transform: uppercase;
     background-color: #2B454E;
@@ -66,6 +138,8 @@
 }
 
 
+
+/*
 main > .container {
     padding: 70px 15px 20px;
 }
@@ -84,8 +158,11 @@ main > .container {
 .not-set {
     color: #c55;
     font-style: italic;
-}
+}*/
 
+
+
+/* yii2 */
 /* add sorting icons to gridview sort links */
 a.asc:after, a.desc:after {
     content: '';
@@ -125,12 +202,12 @@ a.desc:after {
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
-
+/* FIN yii2 *
 /* align the logout "link" (button in form) of the navbar */
-.nav li > form > button.logout {
-    padding-top: 7px;
-    color: rgba(255, 255, 255, 0.5);
-}
+
+
+
+/*
 
 @media(max-width:767px) {
     .nav li > form > button.logout {
@@ -139,38 +216,26 @@ a.desc:after {
         width: 100%;
         padding: 10px 0;
     }
-}
-  /* Estilo para la columna del carrusel */
-    .carousel-column {
-      padding: 20px;
-    }
+}*/
 
-    /* Estilo para la columna con desplazamiento */
-    .scroll-column {     
-      padding: 20px;
-    }
 
-#main{
-    padding-top: 70px; 
-}
-.nav > li > form > button.logout:focus,
-.nav > li > form > button.logout:hover {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.75);
-}
+/* Estilo para la columna del carrusel */
 
-.nav > li > form > button.logout:focus {
-    outline: none;
-}
 
-.form-group {
-    margin-bottom: 1rem;
-}
+  .carousel-column {
+    padding: 20px;
+  }
 
-body{
-font-family: 'Overpass' ;
+  /* Estilo para la columna con desplazamiento */
 
-}
+
+.scroll-column {     
+   padding: 20px;
+ }
+
+ 
+
+
 
 
 
@@ -197,7 +262,7 @@ font-family: 'Overpass' ;
 }
 
 .image-gallery > li {
-  flex-basis: 350px; /* width: 350px; */
+  flex-basis: 350px; 
 }
 
 .image-gallery li img {
@@ -210,9 +275,6 @@ font-family: 'Overpass' ;
 
 
 
-.container {
-  padding: 40px 5%;
-}
 
 .heading-text {
   margin-bottom: 2rem;
@@ -224,9 +286,7 @@ font-family: 'Overpass' ;
   font-weight: 100;
 }
 
-ul {
-  list-style: none;
-}
+
 
 /* Responsive image gallery rules begin*/
 
@@ -238,7 +298,7 @@ ul {
 }
 
 .image-gallery > li {
-  flex-basis: 350px; /*width: 350px;*/
+  flex-basis: 350px; 
   position: relative;
   cursor: pointer;
 }
@@ -266,14 +326,13 @@ ul {
   transform: scale(0);
   transition: all 0.2s 0.1s ease-in-out;
   color: #fff;
-  border-radius: 5px;
-  /* center overlay text */
+  border-radius: 5px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* hover */
+
 .image-gallery li:hover .overlay {
   transform: scale(1);
 }
@@ -283,29 +342,3 @@ ul {
 .carousel-item img:hover{cursor: zoom-in}
 
 #carouselExampleIndicators { position: sticky; top: 250px;  background-color: #2B454E; padding: 7px}
-
-
-/********************** loginpoage *******/
-.login-page{ background-image: url("/images/login.jpg");
-        height: calc(100vh);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;}
-
-.login-page, .register-page {
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #e9ecef;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 100vh;
-    -ms-flex-pack: center;
-    justify-content: center;
-    box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-}
-.card-login{
-    box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-
-}

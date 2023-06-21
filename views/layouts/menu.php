@@ -1,35 +1,39 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-white bg-white">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg fixed-top bg-white">
+  <a class="navbar-brand" href="#">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <?php $activemenu = ($this->context->route == 'site/institucional' || 
+        $this->context->route == 'site/autoridades' || 
+               $this->context->route == 'site/afiliados' ||
+        $this->context->route == 'site/autoridades')?'active':'';
+            ?>
+        <li class="nav-item dropdown">
+         
+        <a class="nav-link dropdown-toggle <?= $activemenu;?>" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           INICIO
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/institucional']); ?>">Institucional</a>
+          <a class="dropdown-item " href="<?= yii\helpers\Url::to(['/site/institucional']); ?>">Institucional</a>
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/autoridades']); ?>">Autoridades</a>
-          <div class="dropdown-divider">Afiliados</div>
+          <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/afiliados']); ?>">Afiliados</a>
         </div>
       </li>
       
+       <?php $activemenu = ($this->context->route == 'site/farmacia' || 
+        $this->context->route == 'site/beneficios' )?'active':'';
+            ?>
+      
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="<?= yii\helpers\Url::to(['/site/beneficios']);?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Beneficios
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/beneficios']); ?>">Farmacia</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/farmacia']); ?>">Farmacia</a>
+          <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/beneficios']); ?>">Otros</a>
         </div>
       </li>
       <li class="nav-item">

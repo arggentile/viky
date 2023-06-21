@@ -25,6 +25,33 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <head>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <style>
+        .login-page{ background-image: url("/images/login.jpg");
+                height: calc(100vh);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;}
+
+        .login-page, .register-page {
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #e9ecef;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100vh;
+            -ms-flex-pack: center;
+            justify-content: center;
+            box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        .card-login{
+            box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+        }
+        </style>
+    
+    
 </head>
 <body class="login-page">
 <?php $this->beginBody() ?>

@@ -63,10 +63,24 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $this->layout = 'main-inicio';
+        return $this->render('inicio');
     }
     
-     /**
+    
+    /**
+     * Displays homepage.
+     *
+     * @return string
+     */
+    public function actionInstitucional()
+    {
+        return $this->render('institucional');
+    }
+    
+    
+    
+    /**
      * Displays homepage.
      *
      * @return string
@@ -76,8 +90,46 @@ class SiteController extends Controller
         return $this->render('autoridades');
     }
     
+    /**
+     * Displays homepage.
+     *
+     * @return string
+     */
+    public function actionAfiliados()
+    {
+        return $this->render('afiliados');
+    }
+    
     
 
+    
+    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionBeneficios()
+    {
+        
+        return $this->render('beneficios');
+    }
+    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionFarmacia()
+    {
+        
+        return $this->render('farmacia');
+    }
+    
+    
+    
+    
+    
     /**
      * Login action.
      *
@@ -144,29 +196,10 @@ class SiteController extends Controller
     }
   
     
-    
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
-    public function actionInicio()
-    {
-        return $this->render('inicio');
-    }
+
     
     
     
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionBeneficios()
-    {
-        
-        return $this->render('beneficios');
-    }
     
      /**
      * Displays about page.

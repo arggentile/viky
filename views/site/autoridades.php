@@ -1,50 +1,52 @@
- <div class="container">
-      <h2 class="heading-text">Responsive <span>image gallery</span></h2>
-      <ul class="image-gallery">
-        <li>
-          <img src="https://source.unsplash.com/VWcPlbHglYc/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/e6FMMambeO4/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/klCiPmzUw0Y/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/IdNOTjPeHrE/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/O0N9MF--hK4/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/FV3GConVSss/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/0ESjL-Nw22Y/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/KTVn62x6fFw/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
+<?php
 
-        <li>
-          <img src="https://source.unsplash.com/VSeVhmW4_JQ/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/07aFaTf24Kg/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-        <li>
-          <img src="https://source.unsplash.com/DqyYTM7pR2o/640x416" alt="" />
-          <div class="overlay"><span>Image title</span></div>
-        </li>
-      </ul>
+/** @var yii\web\View $this */
+use yii\helpers\Html;
+
+$this->title = 'Beneficios';
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<!-- Contenido principal -->
+<div class="">
+    <div class="row">
+        <!-- Columna del carrusel -->
+
+
+        <!-- Columna con desplazamiento -->
+        <div class="col-lg-6">
+            <h3 class="text-blue-site text-overpassbold">COMISIÓN DIRECTIVA <br /> MANDATO 2022/2026:</h3>
+            <dl class="row">
+                <dt class="col-sm-4">PRESIDENTE:</dt><dd class="col-sm-6">ZIEDE, Omar René.</dd>
+                <dt class="col-sm-4">VICEPRESIDENTE:</dt><dd class="col-sm-6">CUYA, José Luis.</dd>
+                <dt class="col-sm-4">SECRETARIA:</dt><dd class="col-sm-8">MORÓN, Marta Beatriz</dd>
+                <dt class="col-sm-4">PROSECRETARIA:</dt><dd class="col-sm-8">ALARCÓN, Graciela</dd>
+                <dt class="col-sm-4">TESORERO:</dt><dd class="col-sm-8"> HAM, Juan Guillermo</dd>
+                <dt class="col-sm-4">PROTESORERO:</dt><dd class="col-sm-8"> GALLET, Jorge Enrique</dd>
+                <dt class="col-sm-4">SECRETARIA DE CAPACITACIÓN MUTUAL:</dt><dd class="col-sm-8">TRAVAGLIO, Mariángeles.</dd>
+            </dl>
+        </div>
+
+
+        <div class="col-lg-6">
+            <h3 class="text-blue-site text-overpassbold">MIEMBROS TITULARES:</h3>
+            <ul class="list-unstyled">
+                <li>MACSARD, Roberto Tufik</li>
+                <li>ARMAS, Jorge Alberto</li>
+              
+            </ul>
+            <h3 class="text-blue-site text-overpassbold">MIEMBROS SUPLENTES:</h3>
+            <ul class="list-unstyled">
+                <li>RAMÍREZ, Carlos Alberto</li>
+                <li>OLANO, Edgardo</li>
+                <li>OLIVARES, Oscar Hipólito</li>
+                <li>TROGNOT, Lilian Angelina</li>
+                <li>VILLEGA, Leandro Nicasio.</li>
+            </ul>
+        </div>
+
     </div>
+</div>
+
+<style type="text/css">
+    
+</style>

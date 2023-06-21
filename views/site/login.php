@@ -12,10 +12,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="login-box">
         <div class="card card-login" style="background-color: transparent">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
-                <form action="../../index3.html" method="post">
+                
+                <?php $form = ActiveForm::begin(['id' => 'login-form', 'enableClientValidation' => true]); ?>
+                <form action="login.html" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input  class="form-control" placeholder="Email" name="User[username]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -23,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" class="form-control" placeholder="Password"name="User[password]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -35,8 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>
                         </div>
                     </div>
-                </form>
-
+              <?php ActiveForm::end(); ?>
 
 
             </div>
