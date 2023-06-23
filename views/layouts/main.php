@@ -34,29 +34,11 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         </header>
 
         <!-- Contenido principal -->
-        <div class="content">
+        <div class="content-site">
             <?= $content; ?>
         </div>
 
-        <!-- Pie fijo -->
-        <footer class="footersite" style="padding: 25px 50px;">
-            <div class="row">
-                <div class="col-md-6 text-left">
-                    <p>
-                        <?= Icon::show('facebook', ['class' => 'fa-2x fa-circle', 'framework' => Icon::FAB]); ?> 
-                        <?= Icon::show('instagram', ['class' => 'fa-2x fa-circle', 'framework' => Icon::FAB]); ?>
-                    </p>
-                    Horarios de Atención <br />
-                    Lunes a Viernes de 08 a 16 Hs
-                </div>
-                <div class="col-md-6 text-right">
-                    <?= Icon::show('facebook', ['framework' => Icon::FAB]); ?>CONTACTO <br />
-                    <?= Icon::show('facebook', ['framework' => Icon::FAB]); ?>Gallardo 49, Viedma, Río Negro, C.P 8500 <br />
-                    <?= Icon::show('facebook', ['framework' => Icon::FAB]); ?>2920-429000/421170 <br />
-                    <?= Icon::show('facebook', ['framework' => Icon::FAB]); ?>comisiondirectivamutualbanco@gmail.com <br />
-                </div>
-            </div>
-        </footer>
+        <?= $this->render('_footer'); ?>
 
 <?php $this->endBody() ?>
 

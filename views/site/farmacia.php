@@ -54,13 +54,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'pep' . DIRECTORY_SEPARATOR; ?>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '4.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpeg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpeg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '4.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

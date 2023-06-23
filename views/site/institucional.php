@@ -15,11 +15,11 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
             <div>
-                <h3> La Mutual Personal Banco de la Provincia de Rio Negro</h3>
+                <h1 clas="text-blue-site text-overpassbold"> La Mutual Personal Banco de la Provincia de Rio Negro</h1>
                 fundada el 23 de julio de 1966, tiene sede en calle gallardo 49 de la ciudad de Viedma, provincia de Río Negro,
                 su radio de acción abarca toda la provincia así como lugares fuera de ella.<br /><br />
                 <p> Los fines sociales y servicios reconocidos a sus asociados con el objeto de propender al mauor bienestar de los mismos y de sus respectivos familiares, son los siguientes:
-                <ul>
+                <ul class="list-unstyled list-institucional">
                     <li>
                         Fomentar la ayuda recíproca entre miembros para satisfacer sus necesidades
                     </li>
@@ -51,13 +51,13 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'pep' . DIRECTORY_SEPARATOR; ?>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '4.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpeg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpeg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '4.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

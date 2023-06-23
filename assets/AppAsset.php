@@ -26,9 +26,10 @@ class AppAsset extends AssetBundle
         'js/app.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
+        'yii\web\YiiAsset',              
         'yii\bootstrap4\BootstrapAsset',
         'yii\bootstrap4\BootstrapPluginAsset',
         'yii\web\JqueryAsset',
+        'app\assets\FontAwesomeAsset' 
     ];
 }

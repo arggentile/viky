@@ -8,12 +8,12 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <!-- Contenido principal -->
 <div class="">
-    <div class="row">
+    <div class="row" style="justify-content: center;">
         <!-- Columna del carrusel -->
 
 
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <h3 class="text-blue-site text-overpassbold">COMISIÓN DIRECTIVA <br /> MANDATO 2022/2026:</h3>
             <dl class="row">
                 <dt class="col-sm-4">PRESIDENTE:</dt><dd class="col-sm-6">ZIEDE, Omar René.</dd>
@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
 
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <h3 class="text-blue-site text-overpassbold">MIEMBROS TITULARES:</h3>
             <ul class="list-unstyled">
                 <li>MACSARD, Roberto Tufik</li>

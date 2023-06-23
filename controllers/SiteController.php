@@ -206,9 +206,9 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionTurismo()
+    public function actionTurismoCondor()
     {
         
-        return $this->render('turismo');
+        return $this->render('turismo-condor');
     }
 }

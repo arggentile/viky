@@ -20,14 +20,19 @@
 }
 /* FIN fonts */
 
-
-
+#enl-home-page{
+    background-image: radial-gradient(circle at 33.19% 51.47%, #84fff3 0, #67faf2 25%, #3cf2f2 50%, #00eaf3 75%, #00e2f5 100%);
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
 
 body {
     font-family: 'Overpass';
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: #2B454E;
 }
 
 .header {
@@ -35,9 +40,21 @@ body {
     background-color: #f8f9fa;
     /* Agrega cualquier otro estilo deseado para la cabecera */
 }
-.content {
+.content-site {
     flex: 1;
-    padding: 20px;
+    padding: 70px 25px 190px 50px;
+}
+.colfooterleft{
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.colfooterright{
+    padding-top: 70px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    
 }
 
 footer {
@@ -45,9 +62,27 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* MENU */
+
+
+
+
+
+
+.row-turismo{
+    border: 1px solid red;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1),0px 8px 10px -3px rgba(0,0,0,0.1)    ;
+    margin-top: 5px;
+}
+
 
 .nav-item > a{
     font-family: 'OverpassBold';
@@ -116,7 +151,7 @@ footer {
     background-position: center;
 }
 
-.headerinicio 
+.headerinicio,.headerinicio > .navbar 
 {
     background-color: transparent !important;
 }
@@ -230,7 +265,8 @@ a.desc:after {
 
 
 .scroll-column {     
-   padding: 20px;
+   overflow-y: scroll;
+   max-height: 450px;
  }
 
  
@@ -238,8 +274,7 @@ a.desc:after {
 
 
 
-
-#carouselExampleIndicators img {
+.carouselExampleIndicators img {
   width: 100%;
   height: 350px;
 }
@@ -337,8 +372,68 @@ a.desc:after {
   transform: scale(1);
 }
 
-
+.carousel-inner {
+    border-radius: 35px;
+}
 
 .carousel-item img:hover{cursor: zoom-in}
 
-#carouselExampleIndicators { position: sticky; top: 250px;  background-color: #2B454E; padding: 7px}
+#carouselExampleIndicators { position: sticky; top: 250px;  padding: 7px}
+
+
+/*
+.scroollsite::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+     
+}
+
+
+.scroollsite::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.scroollsite::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.scroollsite::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+
+.scroollsite::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+.scroollsite::-webkit-scrollbar-track:hover,
+.contascroollsiteiner::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}*/
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #F90; 
+    background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent)
+}
+::-webkit-scrollbar-thumb:vertical
+{
+  border-top: solid 2px rgba(33,33,33,0.5);
+  border-bottom: solid 2px rgba(33,33,33,0.5);
+}
+
+
+.list-institucional > li{
+    margin: 5px 5px; 
+}
