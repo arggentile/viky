@@ -23,7 +23,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         <?php $this->head() ?>
     </head>
 
-    <body class="d-flex flex-column h-100 bodyinicio">
+    <body class="d-flex flex-column h-100 bodyinicio container-lg">
 <?php $this->beginBody() ?>
 
         <header id="header" class="header header headerinicio">
@@ -31,7 +31,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         </header>
 
         <!-- Contenido principal -->
-        <div class="content-site">
+        <div class="container-lg content-site">
             <?= $content; ?>
         </div>
 

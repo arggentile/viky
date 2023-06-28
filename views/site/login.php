@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-flat background-bluesite text-uppercase text-overpassbold">Ingresar</button>
                         </div>
                     </div>
               <?php ActiveForm::end(); ?>

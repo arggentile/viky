@@ -43,7 +43,6 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-club']); ?>">Club</a>
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-hotel']); ?>">Hotel</a>
-          <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-hotel']); ?>">Hotel</a>
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-condor']); ?>">El Condor</a>
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-las-grutas']); ?>">Las Grutas</a>
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-bolson']); ?>">El Bolsón</a>

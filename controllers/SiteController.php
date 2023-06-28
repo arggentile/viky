@@ -211,4 +211,39 @@ class SiteController extends Controller
         
         return $this->render('turismo-condor');
     }
+    
+    
+     /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionTurismoClub()
+    {
+        
+        return $this->render('turismo-club');
+    }
+    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionTurismoHotel()
+    {
+        
+        return $this->render('turismo-hotel');
+    }
+    
+    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionTurismoLasGrutas()
+    {
+        
+        return $this->render('turismo-las-grutas');
+    }
 }

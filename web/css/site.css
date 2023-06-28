@@ -18,47 +18,58 @@
     font-style: normal;
     font-weight: normal;
 }
-/* FIN fonts */
-
-#enl-home-page{
-    background-image: radial-gradient(circle at 33.19% 51.47%, #84fff3 0, #67faf2 25%, #3cf2f2 50%, #00eaf3 75%, #00e2f5 100%);
-    height: 25px;
-    width: 25px;
-    border-radius: 50px;
+@font-face {
+    font-family: 'OverpassExtraBold';
+    src: url('/fonts/overpass/Overpass-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
 }
+@font-face {
+    font-family: 'OverpassBlack';
+    src: url('/fonts/overpass/Overpass-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+/* FIN fonts */ 
 
-body {
+/* PRINCIPALES CLASES*/ 
+.text-overpassbold{
+    font-family: 'OverpassBold';
+}
+.text-overpassextrabold{
+    font-family: 'OverpassExtraBold';
+}
+.text-overpassbalck{
+    font-family: 'OverpassBlack';
+}
+.text-overpassregular{
     font-family: 'Overpass';
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+}
+.text-blue-site{
     color: #2B454E;
 }
+.background-bluesite{
+    background-color: #2B454E;
+    border-color:  #2B454E;
+}
 
-.header {
-    height: 50px; /* Ajusta la altura de la cabecera según tus necesidades */
-    background-color: #f8f9fa;
-    /* Agrega cualquier otro estilo deseado para la cabecera */
-}
-.content-site {
-    flex: 1;
-    padding: 70px 25px 190px 50px;
-}
+/* FIN PRINCIPALES CLASES*/ 
+
+
+/* INICIO DEL FOTTER */
 .colfooterleft{
     padding-top: 70px;
     padding-left: 30px;
     padding-bottom: 10px;
 }
-
 .colfooterright{
-    padding-top: 70px;
+    padding-top: 90px;
     padding-right: 30px;
     padding-bottom: 10px;
     
 }
-
 footer {
-    background-image: url("/images/pieagus.png");
+    background-image: url("/images/pie.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -67,28 +78,41 @@ footer {
     right: 0;
     left: 0;
     width: 100%;
+    padding: 25px 50px;
 }
+/* FIN DEL FOTTER */
+/* LAYOUT */
+body {
+    font-family: 'Overpass';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #2B454E;
+}
+.header {
+    height: 50px; 
+    background-color: #f8f9fa;
+}
+.content-site {
+    flex: 1;
+    padding: 70px 25px 190px 50px;
+}
+/* FIN LAYOPUT*/
+
 
 /* MENU */
-
-
-
-
-
-
-.row-turismo{
-    border: 1px solid red;
-    border-radius: 12px;
-    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1),0px 8px 10px -3px rgba(0,0,0,0.1)    ;
-    margin-top: 5px;
+#enl-home-page{
+    background-image: radial-gradient(circle at 33.19% 51.47%, #84fff3 0, #67faf2 25%, #3cf2f2 50%, #00eaf3 75%, #00e2f5 100%);
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
 }
-
-
 .nav-item > a{
     font-family: 'OverpassBold';
     font-weight: bold;
     text-transform: uppercase;
     color: #2B454E;
+    font-size: 1.15rem;
 }
 .nav-item >a.active {
     background-color: #2B454E;
@@ -125,24 +149,10 @@ footer {
 .nav > li > form > button.logout:focus {
  outline: none;
 }
-/* FIN MENU */
 
-.text-overpassbold{
-    font-family: 'OverpassBold';
-}
-.text-overpassbalck{
-    font-family: 'OverpassBlack';
-}
-.text-overpassregular{
-    font-family: 'Overpass';
-}
-.text-blue-site{
-    color: #2B454E;
-}
+/* FIN DEL MENu */
 
-
-
-
+/* page inicio */
 .bodyinicio{
     background-image: url("/images/inicionuevo.png");
     height: calc(100vh);
@@ -150,14 +160,10 @@ footer {
     background-size: cover;
     background-position: center;
 }
-
 .headerinicio,.headerinicio > .navbar 
 {
     background-color: transparent !important;
 }
-
-
-
 #btn-asociate{
     text-transform: uppercase;
     background-color: #2B454E;
@@ -171,6 +177,23 @@ footer {
     border-color: #2B454E;    
     padding: 5px 15px;
 }
+/* FIN PAGE INICIO */
+
+
+
+
+
+.row-turismo{
+    border: 1px solid red;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.1),0px 8px 10px -3px rgba(0,0,0,0.1)    ;
+    margin-top: 5px;
+}
+
+
+
+
+
 
 
 
@@ -266,7 +289,7 @@ a.desc:after {
 
 .scroll-column {     
    overflow-y: scroll;
-   max-height: 450px;
+   max-height: 550px;
  }
 
  

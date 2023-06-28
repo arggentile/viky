@@ -7,37 +7,39 @@ $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <!-- Contenido principal -->
-<div class="">
+
     <div class="row">
         <!-- Columna del carrusel -->
 
 
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
-            <div>
-                <h1 clas="text-blue-site text-overpassbold"> La Mutual Personal Banco de la Provincia de Rio Negro</h1>
-                fundada el 23 de julio de 1966, tiene sede en calle gallardo 49 de la ciudad de Viedma, provincia de Río Negro,
-                su radio de acción abarca toda la provincia así como lugares fuera de ella.<br /><br />
-                <p> Los fines sociales y servicios reconocidos a sus asociados con el objeto de propender al mauor bienestar de los mismos y de sus respectivos familiares, son los siguientes:
-                <ul class="list-unstyled list-institucional">
-                    <li>
-                        Fomentar la ayuda recíproca entre miembros para satisfacer sus necesidades
-                    </li>
-                    <li>
-                        Prestar servicios funerarios
-                    </li>
-                    <li>
-                        Otorgar subsidios por casamiento, nacimiento, fallecimiento o cualquier otro evento que determine.
-                    </li>
-                    <li>
-                        Proporcionar servicios de asistencia médica integral y farmacéutica.
-                    </li>
-                    <li>
-                        Proporcionar servicios de recreación, turismo y otros compatibles con el desarrollo físico y espiritual de los asociados.
-                    </li>
-                </ul> 
-                </p>
-            </div>
+                <h1 class="text-blue-site text-overpassbalck 3rem text-uppercase "> Mutual Personal <br /> 
+                    Banco de la Provincia de Rio Negro
+                </h1>
+                <p class="text-justify">
+                Fundada el 23 de julio de 1966, tiene sede en calle gallardo 49 de la ciudad de Viedma, provincia de Río Negro,
+                su radio de acción abarca toda la provincia así como lugares fuera de ella.<!-- comment --></p>
+                <p class="text-justify"> Los fines sociales y servicios reconocidos a sus asociados con el objeto de propender al mayor bienestar de los mismos y de sus respectivos familiares, son los siguientes:</p>
+                    <ul class="list-unstyled list-institucional">
+                        <li>
+                            Fomentar la ayuda recíproca entre miembros para satisfacer sus necesidades
+                        </li>
+                        <li>
+                            Prestar servicios funerarios
+                        </li>
+                        <li>
+                            Otorgar subsidios por casamiento, nacimiento, fallecimiento o cualquier otro evento que determine.
+                        </li>
+                        <li>
+                            Proporcionar servicios de asistencia médica integral y farmacéutica.
+                        </li>
+                        <li>
+                            Proporcionar servicios de recreación, turismo y otros compatibles con el desarrollo físico y espiritual de los asociados.
+                        </li>
+                    </ul> 
+               
+            
         </div>
 
 
@@ -54,10 +56,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '4.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -72,7 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
     </div>
-</div>
+
 
 <!-- Modal para ampliar imágenes -->
 <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
