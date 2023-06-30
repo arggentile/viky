@@ -18,10 +18,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     Banco de la Provincia de Rio Negro
                 </h1>
                 <p class="text-justify">
-                Fundada el 23 de julio de 1966, tiene sede en calle gallardo 49 de la ciudad de Viedma, provincia de Río Negro,
-                su radio de acción abarca toda la provincia así como lugares fuera de ella.<!-- comment --></p>
-                <p class="text-justify"> Los fines sociales y servicios reconocidos a sus asociados con el objeto de propender al mayor bienestar de los mismos y de sus respectivos familiares, son los siguientes:</p>
-                    <ul class="list-unstyled list-institucional">
+                    Fundada el 23 de julio de 1966, tiene sede en calle gallardo 49 de la ciudad de Viedma, provincia de Río Negro,
+                     su radio de acción abarca toda la provincia así como lugares fuera de ella.<br /> <br />
+                     Los fines sociales y servicios reconocidos a sus asociados con el objeto de propender al mayor bienestar de los mismos y de sus respectivos familiares, son los siguientes:
+                </p>
+                    <ul class="list-institucional text-justify">
                         <li>
                             Fomentar la ayuda recíproca entre miembros para satisfacer sus necesidades
                         </li>

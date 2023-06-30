@@ -47,8 +47,6 @@
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-las-grutas']); ?>">Las Grutas</a>
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-bolson']); ?>">El Bolsón</a>
           <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-bariloche']); ?>">Bariloche</a>
-          
-          
         </div>
       </li>
       

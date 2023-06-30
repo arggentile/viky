@@ -14,10 +14,12 @@ $this->params['breadcrumbs'][] = $this->title;
             BANCO DE LA PROVINCIA 
             DE RÍO NEGRO 
         </h1>
-        <p>    
+        <br />
+        <p class="text-1medrem">    
             ¿Queres contar con gran cantidad <br />
             de beneficios y descuentos?
         </p>
+        <br />
         <p>
             <button class="" type="button" id="btn-asociate"> asociate </button>
         </p>

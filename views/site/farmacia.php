@@ -31,12 +31,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 <span clas=""> Sábados: de 9 a 13hs. </span>
             </p>
 
-            <h6 class="text-blue-site text-overpassbold"> Contactos: </h6> 
+            <h6 class="text-blue-site text-overpassbold text-uppercase"> Contactos: </h6> 
             <p>
-                <span clas=""> 
-                <i class="fas fa-map-marker"></i>
-                GALLARDO 49, VIEDMA, RÍO NEGRO. C.P: 8500. 
-                </span><br />
+                <span clas=""><i class="fas fa-map-marker"></i> GALLARDO 49, VIEDMA, RÍO NEGRO. C.P: 8500</span><br />
                 <span clas=""> <i class="fas fa-phone"></i> 2920-307577 </span><br />
                 <span clas=""> <i class="fas fa-envelope"></i>farmaciapeumayen@gmail.com </span><br />
             </p>
