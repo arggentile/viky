@@ -12,26 +12,16 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row row-turismo">
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> Las Grutas </h3>
+            <h3 class="text-blue-site text-overpassbalck text-uppercase"> EL BOLSON </h3>
             <p class="text-justify"> 
-                Las Grutas es una villa balnearia argentina ubicada en la provincia de Río Negro en el noreste de la 
-                Patagonia argentina. Se encuentra dentro del ejido municipal de la ciudad de San Antonio Oeste.<br />
-                <br />
-                Es el más importante balneario marítimo de la Patagonia. La villa se destaca por poseer las aguas más cálidas en la costa de Argentina pese a 
-                que por la latitud el preconcepto sugiere lo contrario. El hecho encuentra su explicación en que en el golfo de 
-                San Matías provoca el resurgir y el asoleamiento de las aguas procedentes de las corrientes cálidas del norte 
-                sobre las corrientes frías procedentes del sur, creando en la región de Las Grutas un microclima con una atractiva 
-                fauna marina y un clima muy benigno para el turismo. El mar se caracteriza también por su intenso color azul y por la 
-                transparencia y alta concentración de sales y yodo, factores que le otorgan un alto valor hipertónico, especialmente para niños 
-                y ancianos. La playa, en la zona de influencia y servicios del balneario, se extiende a lo largo de unos 3 Km. y un ancho máximo de 1 Km.
-                durante la bajamar.
-                <br />
-                <br />
-                El centro turístico posee una amplia infraestructura de servicios. Conformada por diez 
-                bajadas o paradores con servicios de playa, cuenta con excelentes y seguros sitios para los bañistas de 
-                todas las edades. Invitan al turista a disfrutar en familia y realizar una gran variedad de actividades, deportes de playa, 
-                entretenimientos y juegos programados, deportes náuticos, caminatas, sociales, pesca deportiva desde la costa y excursiones de pesca embarcada. 
-                La transparencia del mar y su agradable temperatura, lo hacen un lugar muy apreciado para la práctica de buceo.
+                El Bolsón se encuentra en el departamento Bariloche, al sudoeste de la provincia de Río Negro y a 18 Km.
+                del Parque Nacional Lago Puelo en la Provincia de Chubut. Favorecido por un microclima apacible, este pueblo de
+                montaña está preparado para recibir a todo tipo de visitantes. Naturaleza, aventura, historia, mitos, cultura y tranquilidad 
+                son algunos ingredientes que garantizan unas gratas vacaciones. A 120 Km. hacia el sur de Bariloche, por un magnífico camino 
+                de montaña, nos encontramos con el valle de El Bolsón, una región que centra su actividad en el cultivo orgánico de la tierra, 
+                las artesanías, la producción de dulces y cerveza y el turismo. El Bolsón está custodiado por altos cordones montañosos entre 
+                los que se encuentra el imponente Cerro Piltriquitron, que lo protege de los vientos, formando una “gran bolsa”. Estas cualidades
+                derivan en un microclima ideal para actividades productivas y recreativas.
             </p>
         </div>
 
@@ -72,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="row row-turismo">
     <div class="col-lg-6 carousel-column">
-            <div id="carouselExampleIndicators2 class="carouselExampleIndicators carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
@@ -105,13 +95,12 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-6 scroll-column">
             <h3 class="text-blue-site text-overpassbalck text-uppercase"> Nuestro Complejo: </h3>
             <p class="text-justify"> 
-                Está situado en pleno centro peatonal del balneario, a metros de las mejores ofertas gastronómicas, 
-                teatro, centro de compras, y a solo 100mts del mar.<br />
-                <br />
-                Contamos con 19 departamentos, totalmente amoblados para 6 personas, con las siguientes comodidades: 2 dormitorios, 
-                cocina/comedor, 2 baños, estacionamiento para vehículo propio, entrada para vehículo individual con fogón y parrilla,
-                pequeño patio cerrado individual, televisor led con señal satelital, WiFi.
-                <br />
+                Se sitúa al pie del cerro Piltriquitrón, contamos con un predio totalmente parquizado de más de 10.000mts2, de fácil acceso, garantizando tranquilidad para tu familia.
+            </p>
+            <p class="text-justify"> 
+                Contamos con 3 cabañas totalmente amobladas para 6 personas, con las siguientes comodidades: 2 dormitorios,
+                cocina/comedor, 1 baño, estacionamiento para vehículo propio, fogón y parrilla, televisor led con señal satelital, WiFi
+
             </p>
         </div>
 

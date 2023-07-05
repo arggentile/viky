@@ -12,26 +12,12 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row row-turismo">
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> Las Grutas </h3>
+            <h3 class="text-blue-site text-overpassbalck text-uppercase"> BARILOCHE </h3>
             <p class="text-justify"> 
-                Las Grutas es una villa balnearia argentina ubicada en la provincia de Río Negro en el noreste de la 
-                Patagonia argentina. Se encuentra dentro del ejido municipal de la ciudad de San Antonio Oeste.<br />
-                <br />
-                Es el más importante balneario marítimo de la Patagonia. La villa se destaca por poseer las aguas más cálidas en la costa de Argentina pese a 
-                que por la latitud el preconcepto sugiere lo contrario. El hecho encuentra su explicación en que en el golfo de 
-                San Matías provoca el resurgir y el asoleamiento de las aguas procedentes de las corrientes cálidas del norte 
-                sobre las corrientes frías procedentes del sur, creando en la región de Las Grutas un microclima con una atractiva 
-                fauna marina y un clima muy benigno para el turismo. El mar se caracteriza también por su intenso color azul y por la 
-                transparencia y alta concentración de sales y yodo, factores que le otorgan un alto valor hipertónico, especialmente para niños 
-                y ancianos. La playa, en la zona de influencia y servicios del balneario, se extiende a lo largo de unos 3 Km. y un ancho máximo de 1 Km.
-                durante la bajamar.
-                <br />
-                <br />
-                El centro turístico posee una amplia infraestructura de servicios. Conformada por diez 
-                bajadas o paradores con servicios de playa, cuenta con excelentes y seguros sitios para los bañistas de 
-                todas las edades. Invitan al turista a disfrutar en familia y realizar una gran variedad de actividades, deportes de playa, 
-                entretenimientos y juegos programados, deportes náuticos, caminatas, sociales, pesca deportiva desde la costa y excursiones de pesca embarcada. 
-                La transparencia del mar y su agradable temperatura, lo hacen un lugar muy apreciado para la práctica de buceo.
+                Bariloche es una ciudad ubicada entre bosques milenarios, montañas cubiertas de nieve 
+                y lagos cristalinos, en la provincia de Río Negro, Argentina. Se trata de una postal de nuestra Patagonia.
+                Una ciudad anfitriona por excelencia, enmarcada por algunas de las bellezas naturales más importantes del país.
+
             </p>
         </div>
 
@@ -72,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="row row-turismo">
     <div class="col-lg-6 carousel-column">
-            <div id="carouselExampleIndicators2 class="carouselExampleIndicators carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
@@ -105,13 +91,15 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-6 scroll-column">
             <h3 class="text-blue-site text-overpassbalck text-uppercase"> Nuestro Complejo: </h3>
             <p class="text-justify"> 
-                Está situado en pleno centro peatonal del balneario, a metros de las mejores ofertas gastronómicas, 
-                teatro, centro de compras, y a solo 100mts del mar.<br />
-                <br />
-                Contamos con 19 departamentos, totalmente amoblados para 6 personas, con las siguientes comodidades: 2 dormitorios, 
-                cocina/comedor, 2 baños, estacionamiento para vehículo propio, entrada para vehículo individual con fogón y parrilla,
-                pequeño patio cerrado individual, televisor led con señal satelital, WiFi.
-                <br />
+                Está ubicado en Calle Foyel 5243, a la altura del kilómetro 5 de la Avenida E. Bustillo, a 200mts
+                del lago Nahuel Huapi y de las mejores ofertas gastronómicas de la ciudad. A su vez, se encuentra 
+                a sólo 700mts del Teleférico del Cerro Otto.
+
+            </p>
+            <p class="text-justify"> 
+                Contamos con 3 cabañas totalmente amobladas para 6 personas, con las siguientes comodidades: 2 dormitorios, 
+                cocina/comedor, 1 baño, estacionamiento para vehículo propio, fogón y parrilla, televisor led con señal 
+                satelital, WiFi. 
             </p>
         </div>
 

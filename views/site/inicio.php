@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-inicio">
     <div class="col-lg-6 col-sm-6">
         <h1 class="text-blue-site text-overpassbalck  3rem text-justify">
-            MUTUAL PERSONAL <br />
+            MUTUAL PERSONAL 
             BANCO DE LA PROVINCIA 
             DE RÍO NEGRO 
         </h1>
@@ -25,4 +25,3 @@ $this->params['breadcrumbs'][] = $this->title;
         </p>
     </div>
 </div>
-

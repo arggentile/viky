@@ -6,11 +6,7 @@
 use app\assets\AppAsset;
 use yii\bootstrap4\Html;
 
-use kartik\icons\Icon;
-Icon::map($this);
-
 AppAsset::register($this);
-
 
 $this->registerCsrfMetaTags();
 $this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
@@ -25,12 +21,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <head>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <style>
-        .login-page{ background-image: url("/images/login.jpg");
-                height: calc(100vh);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: top center;}
+    <style type="text/css">
+        .login-page{ 
+            background-image: url("/images/login.jpg");
+            height: calc(100vh);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
 
         .login-page, .register-page {
             -ms-flex-align: center;
@@ -47,16 +45,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         }
         .card-login{
             box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-
         }
-        </style>
+    </style>
     
     
 </head>
 <body class="login-page">
 <?php $this->beginBody() ?>
-
-<?= $content ?>
+    <?= $content ?>
 <?php $this->endBody() ?>
    
 </body>

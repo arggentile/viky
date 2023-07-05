@@ -55,7 +55,51 @@ class SiteController extends Controller
     }
     
     
+    
+    /*******************************************************/
+    /**
+     * Login action.
+     *
+     * @return Response|string
+     */
+    public function actionLogin()
+    {
+        
+        $this->layout = 'main-login';
+        
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
 
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
+        }
+
+        $model->password = '';
+        
+        return $this->render('login', [
+            'model' => $model,
+        ]);
+    }
+    
+    /*******************************************************/
+    /**
+     * Login action.
+     *
+     * @return Response|string
+     */
+    public function actionError()
+    {
+        
+        return $this->render('error', [
+        ]);
+    }
+    
+    
+    
+    
+    /*******************************************************/
     /**
      * Displays homepage.
      *
@@ -130,30 +174,7 @@ class SiteController extends Controller
     
     
     
-    /**
-     * Login action.
-     *
-     * @return Response|string
-     */
-    public function actionLogin()
-    {
-        
-        $this->layout = 'main-login';
-        
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-
-        $model->password = '';
-        return $this->render('login', [
-            'model' => $model,
-        ]);
-    }
+    
 
     /**
      * Logout action.
@@ -233,6 +254,28 @@ class SiteController extends Controller
     {
         
         return $this->render('turismo-hotel');
+    }
+    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionTurismoBolson()
+    {
+        
+        return $this->render('turismo-el-bolson');
+    }
+    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionTurismoBariloche()
+    {
+        
+        return $this->render('turismo-bariloche');
     }
     
     

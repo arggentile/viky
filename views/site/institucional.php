@@ -9,12 +9,9 @@ $this->params['breadcrumbs'][] = $this->title;
 <!-- Contenido principal -->
 
     <div class="row">
-        <!-- Columna del carrusel -->
-
-
-        <!-- Columna con desplazamiento -->
+   
         <div class="col-lg-6 scroll-column">
-                <h1 class="text-blue-site text-overpassbalck 3rem text-uppercase "> Mutual Personal <br /> 
+                <h1 class="text-blue-site text-overpassbalck 3rem text-uppercase text-justify"> Mutual Personal  
                     Banco de la Provincia de Rio Negro
                 </h1>
                 <p class="text-justify">
@@ -51,16 +48,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'pep' . DIRECTORY_SEPARATOR; ?>
+                <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'site' . DIRECTORY_SEPARATOR; ?>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'complejo-el-condor-01.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'complejo-el-condor-02.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'complejo-el-condor-03.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

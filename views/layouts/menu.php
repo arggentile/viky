@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
        <?php $activemenu = ($this->context->route == 'site/institucional' || 
-        $this->context->route == 'site/autoridades' || 
+        $this->context->route == 'site/autoridades' ||  $this->context->route == 'site/index' ||
                $this->context->route == 'site/afiliados' ||
         $this->context->route == 'site/autoridades')?'active':'';
             ?>
