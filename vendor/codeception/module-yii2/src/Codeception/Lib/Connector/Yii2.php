@@ -40,7 +40,7 @@ class Yii2 extends Client
     /**
      * Clean the response object by resetting specific properties via its' `clear()` method.
      * This will keep behaviors / event handlers, but could inadvertently leave some changes intact.
-     * @see \yii\web\Response::clear()
+     * @see \Yii\web\Response::clear()
      */
     const CLEAN_CLEAR = 'clear';
 
