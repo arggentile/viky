@@ -8,8 +8,8 @@ $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-inicio">
-    <div class="col-lg-6 col-sm-6">
-        <h1 class="text-blue-site text-overpassbalck  3rem text-justify">
+    <div class="offset-lg-2 col-lg-5 col-sm-6">
+        <h1 class="text-blue-site text-overpassbalck  3rem text-justify" id="title-page-site">
             MUTUAL PERSONAL 
             BANCO DE LA PROVINCIA 
             DE RÍO NEGRO 
