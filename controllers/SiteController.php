@@ -54,7 +54,30 @@ class SiteController extends Controller
         ];
     }
     
-    
+     /*******************************************************/
+    /**
+     * Login action.
+     *
+     * @return Response|string
+     */
+    public function actionHola()
+    {
+        
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
+        }
+
+        $model->password = '';
+        
+        return $this->render('hola', [
+            'model' => $model,
+        ]);
+    }
     
     /*******************************************************/
     /**

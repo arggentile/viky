@@ -1,10 +1,4 @@
 <?php
-/** @var yii\web\View $this */
-/** @var yii\bootstrap5\ActiveForm $form */
-
-/** @var app\models\LoginForm $model */
-use yii\bootstrap4\ActiveForm;
-use yii\bootstrap4\Html;
 
 $this->title = 'Inicio';
 $this->params['breadcrumbs'][] = $this->title;
@@ -21,8 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="<?= $directorioImagenes . 'inicioasociate.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
-                <div class="col-md-6  carousel-caption d-none d-md-block carousel-caption-home">
-                    <h2 class="text-blue-site text-overpassbalck  3rem text-justify text-uppercase">Asociación mutual personal del banco de la provincia de Río Negro</h2>
+                <div class="col-md-6 col-md-12 carousel-caption   carousel-caption-home">
+                    <h2 class="text-blue-site text-overpassbalck  text-justify text-uppercase">Asociación mutual personal del banco de la provincia de Río Negro</h2>
                     <p class="text-1medrem">¿Queres contar con gran cantidad <br />
                                               de beneficios y descuentos?</p>
                     <a href="<?= \yii\helpers\Url::to(['/site/asociate']); ?>" class="btn btn-asociate-home"> asociate </a>
@@ -30,8 +24,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="<?= $directorioImagenes . 'iniciobeneficios.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
-                <div class="col-md-6 carousel-caption d-none d-md-block carousel-caption-home">
-                    <h2 class="text-blue-site text-overpassbalck  3rem text-justify  text-uppercase">Contamos con gran cantidad de descuentos y beneficios</h2>
+                <div class="col-md-6 col-md-12 carousel-caption   carousel-caption-home">
+                    <h2 class="text-blue-site text-overpassbalck  text-justify  text-uppercase">Contamos con gran cantidad de descuentos y beneficios</h2>
                     <p class="text-blue-site text-1medrem">Descuentos en farmacias, reintegros por razones de salud, ayuda escolar y universitaria, y mucho más ...
                     </p>
                     <a href="<?= \yii\helpers\Url::to(['/site/farmacia']); ?> " class="btn btn-asociate-home"> saber más </a>
@@ -39,9 +33,9 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="<?= $directorioImagenes . 'inicioturismo.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
-                <div class="col-md-6  carousel-caption d-none d-md-block carousel-caption-home">
-                    <h2 class="text-blue-site text-overpassbalck  3rem text-justify  text-uppercase">Sabias de nuestros descuentos en alojamientos?</h2>
-                    <p class="text-blue-site text-1medrem">Contamos con diferentes puntos túristicos de la provincia de Río Negro, asociate y aprovecha los beneficios</p>
+                <div class="col-md-6 col-md-12 carousel-caption  carousel-caption-home">
+                    <h2 class="text-blue-site text-overpassbalck  text-justify  text-uppercase">Sabias de nuestros descuentos en alojamientos?</h2>
+                    <p class="text-blue-site">Contamos con diferentes puntos túristicos de la provincia de Río Negro, asociate y aprovecha los beneficios</p>
                     <a href="<?= \yii\helpers\Url::to(['/site/turismo-principal']); ?>" class="btn btn-asociate-home"> conocelos </a>
                 </div>
             </div>

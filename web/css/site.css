@@ -95,9 +95,11 @@ body {
     color: #2B454E;
 }
 #header {
-    border-bottom: 2px solid #a7a7a7;
-    height: 107px; 
+    height: 110px; 
     background-color: #f8f9fa;
+}
+#header .navbar {
+     border-bottom: 2px solid #a7a7a7;
 }
 .layout-site {
     flex: 1;
@@ -108,10 +110,11 @@ body {
     flex: 1;
     padding-bottom: 190px;
     max-width: calc(100vw);
+    margin-top: 1rem;
 }
 
 .container-site {
-    max-width: 1600px;
+    /*max-width: 1600px;*/
     width: 100%;
     padding-right: 4rem;
     padding-left: 4rem;
@@ -203,6 +206,8 @@ body {
 
 }
 
+
+
 }
 /* FIN DEL MENU */
 
@@ -228,20 +233,6 @@ footer {
     z-index: 1000;
 }
 
-
-@media (max-width: 576px){
-footer {
-    background-image: none;
-    position: relative;
-    width: 100%;
-    padding: 10px;
-    background-color: #86CDBF;
-    z-index: 1000;
-}
-.colfooterright {
-    text-align: left;
-}
-}
 /* FIN DEL FOTTER */
 
 
@@ -283,43 +274,6 @@ footer {
 
 
 
-
-
-
-/*
-main > .container {
-    padding: 70px 15px 20px;
-}
-
-.footer {
-    background-color: #f5f5f5;
-    font-size: .9em;
-    height: 60px;
-}
-
-.footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.not-set {
-    color: #c55;
-    font-style: italic;
-}*/
-
-
-
-
-/*
-
-@media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 0;
-    }
-}*/
 
 
 /* Estilo para la columna del carrusel */
@@ -631,3 +585,50 @@ main > .container {
     box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 /*LOGIN*/
+
+
+
+
+@media (max-width: 576px){
+    
+.layout-site {
+    padding-bottom: 10px;
+}
+.layout-home {
+    padding-bottom: 10px;
+    margin-top: 1rem;
+}
+
+.container-site {
+    /*max-width: 1600px;*/
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer {
+    background-image: none;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: #86CDBF;
+    z-index: 1000;
+}
+
+
+.image-gallery > li {
+  flex-basis: 100%   ; 
+  position: relative;
+  cursor: pointer;
+}
+
+.colfooterright {
+    text-align: left;
+}
+
+.p-descrip-page{
+    font-size: 1rem;
+}
+
+}

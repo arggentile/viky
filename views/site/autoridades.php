@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'autoridades' . DIRECTORY_SEPARATOR; ?>
     <img class="d-block w-100" src="<?= $directorioImagenes . 'banner.jpg'; ?>" alt="banner autoridades" />
 </div>
-<div class="container-lg">
+<div class="container-site mt-1">
 <div class="con-augtoridades mt-3">
      <h3 class="mt-5 mb-5 text-center"> <span class="text-overpassbold text-blue-site"> Comisión directiva: </span> Autoridades</h3>
              

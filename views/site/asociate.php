@@ -9,7 +9,8 @@ use yii\bootstrap4\Html;
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="login-box">
+
+<div class="login-box container-site">
     <div class="card card-asociate m-auto" style="background-color: transparent">
         <div class="card-body  ">
 
