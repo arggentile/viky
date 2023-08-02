@@ -32,14 +32,6 @@ use yii\bootstrap4\ActiveForm;
     }
 </style>
 <div class="login-box">
-    <div class="login-logo">
-        <p><img src="<?= Yii::getAlias('@images'); ?>/logo_choique.png" class="img-circle" alt="Choique" style="border: solid; border-color: gray; border-width: 1px"><p>
-        <h1 class="h4 mb-3 font-weight-normal" style="color: #848688;">
-            <b>DEFENSORIA</b>MP | <b style="color: #367fa9;"> <img style="width: 17px; height: 17px" src="<?= Yii::getAlias('@images'); ?>/location-outline.svg" > <?= strtoupper(\Yii::$app->params['host']); ?></b>
-        </h1>
-        <img class="mb-4" src="<?= Yii::getAlias('@images'); ?>/logo_mp.png" alt="Ministerio Fiscal" width="250" height="69">
-    </div>
-    <!-- /.login-logo -->
     <div class="row">
         <div class="">
             <div class="panel panel-default">
@@ -108,27 +100,3 @@ use yii\bootstrap4\ActiveForm;
         </div>
     </div>
 </div>
-<!-- /.login-box -->
-
-
-<?php
-$js = <<<EOL
-        $('body').on('change', '#loginform-login', function (event, data) {            
-            $.get('/site/mis-organismo?username=' + $(this).val())
-                .done(function (response) {
-                    $('#loginform-organismo').empty();  
-                    $.each(response, function (id, value) {
-                        $('#loginform-organismo').append('<option value='+ id + '>' + value + '</option>');
-                    });
-                    $('#loginform-organismo').select2({ width: '100%' }).trigger('change');
-                })
-                .fail(function (e) {
-                    console.log(e.responseText);
-                }); 
-        }); 
-        
-        
-       
-    EOL;
-$this->registerJs($js, \yii\web\View::POS_READY);
-?>

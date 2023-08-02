@@ -13,7 +13,7 @@ class FontAwesomeAsset extends AssetBundle {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $js = [
-        'fontawesome/css/all.min.js',
+        'fontawesome/js/all.min.js',
     ];
     public $css = [
         'fontawesome/css/all.min.css',

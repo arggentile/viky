@@ -16,4 +16,14 @@ $(".carousel-control-prev").click(function(){
       var imageSrc = button.attr('src');
       var modal = $(this);
       modal.find('.modal-body img').attr('src', imageSrc);
+ 
+ 
+ });
+ 
+ 
+
+    
+   $(function () {
+        $('[data-toggle="popover"]').popover({html : true,});
     });
+    

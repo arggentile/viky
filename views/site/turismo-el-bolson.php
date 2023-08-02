@@ -9,11 +9,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
-    <div class="row row-turismo">
+    <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> EL BOLSON </h3>
-            <p class="text-justify"> 
+            <h1 class="text-blue-site text-overpassbalck text-uppercase text-mar-prin"> EL BOLSON </h1>
+            <p class=""> 
                 El Bolsón se encuentra en el departamento Bariloche, al sudoeste de la provincia de Río Negro y a 18 Km.
                 del Parque Nacional Lago Puelo en la Provincia de Chubut. Favorecido por un microclima apacible, este pueblo de
                 montaña está preparado para recibir a todo tipo de visitantes. Naturaleza, aventura, historia, mitos, cultura y tranquilidad 
@@ -32,16 +32,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
                 </ol>
-                <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'pep' . DIRECTORY_SEPARATOR; ?>
-                <div class="carousel-inner">
+                <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'bolson' . DIRECTORY_SEPARATOR; ?>
+                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'bols1.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'bols2.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'bols3.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -60,24 +60,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 
-<div class="row row-turismo">
+<div class="row p-descrip-page">
     <div class="col-lg-6 carousel-column">
             <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                </ol>
-                <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'pep' . DIRECTORY_SEPARATOR; ?>
+                
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'bols1.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'bols2.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'bols3.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -93,14 +88,21 @@ $this->params['breadcrumbs'][] = $this->title;
     
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> Nuestro Complejo: </h3>
-            <p class="text-justify"> 
+            <h1 class="text-blue-site text-overpassbalck text-uppercase text-mar-prin"> Nuestro Complejo: </h1>
+            <p class=""> 
                 Se sitúa al pie del cerro Piltriquitrón, contamos con un predio totalmente parquizado de más de 10.000mts2, de fácil acceso, garantizando tranquilidad para tu familia.
             </p>
             <p class="text-justify"> 
-                Contamos con 3 cabañas totalmente amobladas para 6 personas, con las siguientes comodidades: 2 dormitorios,
-                cocina/comedor, 1 baño, estacionamiento para vehículo propio, fogón y parrilla, televisor led con señal satelital, WiFi
-
+                Contamos con 3 cabañas totalmente amobladas para 6 personas, con las siguientes comodidades:
+                <ul>
+                    <li> 2 dormitorios </li>
+                    <li> cocina/comedor </li>
+                    <li> 1 baño </li>
+                    <li> estacionamiento para vehículo propio </li>
+                    <li> fogón y parrilla </li>
+                    <li> televisor led con señal satelital </li>
+                    <li> WiFi </li>
+                </ul>
             </p>
         </div>
 

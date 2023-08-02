@@ -9,11 +9,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
-    <div class="row row-turismo">
+    <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> Las Grutas </h3>
-            <p class="text-justify"> 
+            <h1 class="text-blue-site text-overpassbalck text-uppercase"> Las Grutas </h1>
+            <p class=""> 
                 Las Grutas es una villa balnearia argentina ubicada en la provincia de Río Negro en el noreste de la 
                 Patagonia argentina. Se encuentra dentro del ejido municipal de la ciudad de San Antonio Oeste.<br />
                 <br />
@@ -37,21 +37,19 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="col-lg-6 carousel-column">
             <div id="carouselExampleIndicators1" class="carouselExampleIndicators carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-                </ol>
-                <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'pep' . DIRECTORY_SEPARATOR; ?>
+            <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'grutas' . DIRECTORY_SEPARATOR; ?>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'playasgrutas01.jpg'; ?>" alt="Balneario El Condor" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'playasgrutas02.jpg'; ?>" alt="espigon" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'playasgrutas03.jpg'; ?>" alt="loberia" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . 'playasgrutas04.jpg'; ?>" alt="Complejo El Condor" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -64,33 +62,40 @@ $this->params['breadcrumbs'][] = $this->title;
                 </a>
             </div>
         </div>
-    </div>
-
+</div>
 <div class="divider"></div>
 
 
 
-<div class="row row-turismo">
-    <div class="col-lg-6 carousel-column">
-            <div id="carouselExampleIndicators2 class="carouselExampleIndicators carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                </ol>
-                <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'pep' . DIRECTORY_SEPARATOR; ?>
+<div class="row p-descrip-page">
+   
+        <div class="col-lg-6 carousel-column">
+            <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
+            <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'grutas' . DIRECTORY_SEPARATOR; ?>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 1" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '1.jpg'; ?>" alt="Balneario El Condor" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 2" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '2.jpg'; ?>" alt="espigon" data-toggle="modal" data-target="#imageModal">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="Imagen 3" data-toggle="modal" data-target="#imageModal">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '3.jpg'; ?>" alt="loberia" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '4.jpg'; ?>" alt="Complejo El Condor" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '5.jpg'; ?>" alt="Complejo El Condor" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '6.jpg'; ?>" alt="Complejo El Condor" data-toggle="modal" data-target="#imageModal">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="<?= $directorioImagenes . '7.jpg'; ?>" alt="Complejo El Condor" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
@@ -100,20 +105,42 @@ $this->params['breadcrumbs'][] = $this->title;
                 </a>
             </div>
         </div>
-    
+
+
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> Nuestro Complejo: </h3>
-            <p class="text-justify"> 
+            <h1 class="text-blue-site text-overpassbalck text-uppercase"> Nuestro Complejo: </h1>
+            <p class=""> 
                 Está situado en pleno centro peatonal del balneario, a metros de las mejores ofertas gastronómicas, 
                 teatro, centro de compras, y a solo 100mts del mar.<br />
                 <br />
-                Contamos con 19 departamentos, totalmente amoblados para 6 personas, con las siguientes comodidades: 2 dormitorios, 
-                cocina/comedor, 2 baños, estacionamiento para vehículo propio, entrada para vehículo individual con fogón y parrilla,
-                pequeño patio cerrado individual, televisor led con señal satelital, WiFi.
-                <br />
+                Contamos con 19 departamentos, totalmente amoblados para 6 personas, con las siguientes comodidades.
+                <ul class="lis-unstyled">
+
+                    <li> 2 dormitorios </li>
+                    <li> cocina/comedor </li>
+                    <li> 2 baños </li>
+                    <li> estacionamiento para vehículo propio  </li>
+                    <li> entrada para vehículo individual con fogón y parrilla </li>
+                    <li> pequeño patio cerrado individual </li>
+                    <li> televisor led con señal satelital </li>
+                    <li> WIFI </li>
+                </ul>  
             </p>
         </div>
 
         
     </div>
+
+</div>
+
+<!-- Modal para ampliar imágenes -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-fluid" src="" alt="Ampliación de imagen">
+            </div>
+        </div>
+    </div>
+</div>

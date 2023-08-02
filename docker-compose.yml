@@ -8,7 +8,7 @@ services:
     ports:
       - '8155:80'
     networks:
-     - my-network
+     - red
   db:
     image: mysql:8.0
     restart: always
@@ -26,10 +26,14 @@ services:
     #volumes:
     #  - ~/mysql:/var/lib/mysql
     networks:
-     - my-network
+     - red
  
+networks:
+  red:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: "${SUBNET_DOCKER_NETWORK}"
+      
 volumes:
   my-db:
-networks:
-  my-network:
-    driver: bridge

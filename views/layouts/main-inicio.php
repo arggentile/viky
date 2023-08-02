@@ -22,16 +22,16 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
+    
+    <body class="d-flex flex-column h-100">
+        <?php $this->beginBody() ?>
 
-    <body class="d-flex flex-column h-100 bodyinicio">
-<?php $this->beginBody() ?>
-
-        <header id="header" class="header header headerinicio">
+        <header id="header" class="header">
             <?= $this->render('menu'); ?>
         </header>
 
         <!-- Contenido principal -->
-        <div class="container-lg content-site">
+        <div class="layout-home">
             <?= $content; ?>
         </div>
 

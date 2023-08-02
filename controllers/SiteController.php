@@ -170,6 +170,17 @@ class SiteController extends Controller
         return $this->render('farmacia');
     }
     
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionAsociate()
+    {
+        
+        return $this->render('asociate');
+    }
+
     
     
     
@@ -218,7 +229,16 @@ class SiteController extends Controller
   
     
 
-    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionTurismoPrincipal()
+    {
+        
+        return $this->render('turismo-principal');
+    }
     
     
     

@@ -5,6 +5,12 @@
     font-weight: normal;
 }
 @font-face {
+    font-family: 'OverpassThin';
+    src: url('/fonts/overpass/Overpass-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: 'OverpassBlack';
     src: url('/fonts/overpass/Overpass-Black.ttf') format('truetype');
     font-style: normal;
@@ -24,8 +30,8 @@
     font-weight: bold;
 }
 @font-face {
-    font-family: 'OverpassBlack';
-    src: url('/fonts/overpass/Overpass-Black.ttf') format('truetype');
+    font-family: 'OverpassBoldItalic';
+    src: url('/fonts/overpass/Overpass-BoldItalic.ttf') format('truetype');
     font-style: normal;
     font-weight: bold;
 }
@@ -34,9 +40,15 @@
 #title-page-site{
     font-size: 3.5rem;
 }
+#phome{
+  font-size: 2rem;
+}
 
 
-/* PRINCIPALES CLASES*/ 
+/* PRINCIPALES CLASES*/
+.text-overpassthin{
+    font-family: 'OverpassThin';
+}
 .text-overpassbold{
     font-family: 'OverpassBold';
 }
@@ -50,11 +62,14 @@
     font-family: 'Overpass';
 }
 .text-blue-site{
-    color: #2B454E;
+    color: rgb(43,69,78);
 }
 .background-bluesite{
-    background-color: #2B454E;
-    border-color:  #2B454E;
+    background-color: rgb(43,69,78);
+    border-color:  rgb(43,69,78);
+}
+.text-overpassbolditalic{
+  font-family: 'OverpassBoldItalic';
 }
 .text-1medrem{
     font-size: 1.5rem;
@@ -79,15 +94,35 @@ body {
     flex-direction: column;
     color: #2B454E;
 }
-.header {
-    height: 50px; 
+#header {
+    border-bottom: 2px solid #a7a7a7;
+    height: 107px; 
     background-color: #f8f9fa;
 }
-.content-site {
+.layout-site {
     flex: 1;
-    padding: 70px 25px 190px 50px;
-   max-width: calc(100vw - 200px);
+    padding-bottom: 225px;
+    max-width: calc(100vw);
 }
+.layout-home {
+    flex: 1;
+    padding-bottom: 190px;
+    max-width: calc(100vw);
+}
+
+.container-site {
+    max-width: 1600px;
+    width: 100%;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.font3rem{ font-size: 3rem}
+.text-align-right{
+    text-align: left;
+}
+.text-align-left{text-align: right;}
 /* FIN LAYOUT*/
 
 
@@ -95,10 +130,7 @@ body {
 /* MENU */
 
 #enl-home-page{
-    background-image: radial-gradient(circle at 33.19% 51.47%, #84fff3 0, #67faf2 25%, #3cf2f2 50%, #00eaf3 75%, #00e2f5 100%);
-    height: 25px;
-    width: 25px;
-    border-radius: 50px;
+    width: 250px;
 }
 .nav-item > a{
     font-family: 'OverpassBold';
@@ -114,6 +146,10 @@ body {
     -moz-border-radius-topleft: 10px 10px  0px 0px;
     border-radius: 10px 10px 0px 0px;
     color: #fff !important;
+}
+.headerinicio,.headerinicio > .navbar 
+{
+    background-color: transparent !important;
 }
 #btn-inicio-session{
     text-transform: uppercase;
@@ -153,10 +189,18 @@ body {
     border: 0;
 }
 
-@media (min-width: 992px){
+.navbar-brand { 
+  margin-right: 2rem;
+}
+
+@media (min-width: 576px){
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem;
+}
+.navbar-expand-lg  {
+  padding-right: 0rem;
+
 }
 
 }
@@ -180,7 +224,7 @@ footer {
     right: 0;
     left: 0;
     width: 100%;
-    padding: 125px 50px 30px 50px;
+    padding: 125px 50px 15px 50px;
     z-index: 1000;
 }
 
@@ -207,18 +251,9 @@ footer {
 
 
 /* page inicio */
-.bodyinicio{
-    background-image: url("/images/inicionuevo.png");
-    height: calc(100vh);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.headerinicio,.headerinicio > .navbar 
-{
-    background-color: transparent !important;
-}
-#btn-asociate{
+
+
+.btn-asociate-home{
     text-transform: uppercase;
     background-color: #2B454E;
     color: #fff;
@@ -290,9 +325,17 @@ main > .container {
 /* Estilo para la columna del carrusel */
 
 
-  .carousel-column {
-    padding: 20px;
-  }
+  .carousel-caption-home{
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
 
   /* Estilo para la columna con desplazamiento */
 
@@ -300,17 +343,21 @@ main > .container {
 .scroll-column {     
    overflow-y: auto;
    max-height: 550px;
-   padding: 2rem;
+   padding: 0.5rem 2rem;
  }
 
- 
-
+ .p-descrip-page{
+  font-size: 1.6rem;
+ }
+.list-page-roww{
+  padding-left: 25px;;
+}
 
 
 
 .carouselExampleIndicators img {
   width: 100%;
-  height: 350px;
+  height: 100%;
 }
 
 #container-autoridades {
@@ -360,18 +407,22 @@ main > .container {
 /* Responsive image gallery rules begin*/
 
 .image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    list-style: none;
+    border: 2px #f5f5f5 groove;
+    padding: 2rem;
 }
 
+
 .image-gallery > li {
-  flex-basis: 350px; 
+  flex-basis: 30%   ; 
   position: relative;
   cursor: pointer;
 }
-
+/*
 .image-gallery::after {
   content: "";
   flex-basis: 350px;
@@ -384,7 +435,7 @@ main > .container {
   vertical-align: middle;
   border-radius: 5px;
 }
-
+*/
 .overlay {
   position: absolute;
   width: 100%;
@@ -402,11 +453,25 @@ main > .container {
 }
 
 
+.overlay1 {
+  position: absolute;
+  z-index: 100;
+  width: 100%; 
+  background: rgba(43, 69, 78, 0.7);
+  bottom: 20px;
+  left: 0;
+  color: #fff;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 15px;
+}
+
 .image-gallery li:hover .overlay {
   transform: scale(1);
 }
 
-.carousel-inner {
+.radius35 {
     border-radius: 35px;
 }
 
@@ -500,8 +565,8 @@ main > .container {
 .divider {
   position: relative;
   border-bottom: 5px solid #f0f0f0;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 
@@ -537,3 +602,32 @@ main > .container {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+
+/*LOGIN*/
+.login-page{ 
+    background-image: url("/images/login.jpg");
+    height: calc(100vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.login-page, .register-page {
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #e9ecef;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.card-login{
+    box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+/*LOGIN*/

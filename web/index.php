@@ -11,5 +11,5 @@ $config = require __DIR__ . '/../config/web.php';
 
 (new yii\web\Application($config))->run();
 }catch (Exception $e) {
-           var_dump($e->getMessage());
+           var_dump($e->getMessage()); exit;
         }

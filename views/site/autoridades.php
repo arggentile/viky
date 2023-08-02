@@ -3,47 +3,106 @@
 /** @var yii\web\View $this */
 use yii\helpers\Html;
 
-$this->title = 'Beneficios';
+$this->title = 'Autoridades';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<!-- Contenido principal -->
-<div class="">
-    <div class="row">
-        <!-- Columna del carrusel -->
+<div class="cabecera-autoridades">
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'autoridades' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'banner.jpg'; ?>" alt="banner autoridades" />
+</div>
+<div class="container-lg">
+<div class="con-augtoridades mt-3">
+     <h3 class="mt-5 mb-5 text-center"> <span class="text-overpassbold text-blue-site"> Comisión directiva: </span> Autoridades</h3>
+             
+    <ul class="image-gallery">
+        <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'autoridades' . DIRECTORY_SEPARATOR; ?>
+        <li>
+          <img src="<?= $directorioImagenes . 'presidente.jpg'; ?>" alt="" />
+          <div class="overlay"><span>Presidente</span></div>
+			<div class="overlay1">
+				  <span class="text-overpassbolditalic"> Presidente: </span> 
+				  <br /><span class=""> ZIEDE, Omar René </span>
+			  </div>
+        </li> 
+		<li>
+          <img src="<?= $directorioImagenes . 'tesorero.jpg'; ?>" alt="" />
+          <div class="overlay"><span>Tesorero</span></div>
+			    <div class="overlay1">
+				  <span class="text-overpassbolditalic"> Tesorero: </span> 
+				  <br /><span class=""> HAM, Juan Guillermo </span>
+			  </div>
+        </li>
+        <li>
+          <img src="<?= $directorioImagenes . 'secretaria.jpg'; ?>" alt="" />
+          <div class="overlay"><span>Secretaria</span></div>
+			<div class="overlay1">
+				  <span class="text-overpassbolditalic"> Secretaria: </span> 
+				  <br /><span class=""> MORÓN, Marta Beatriz </span>
+			  </div>
+        </li>
 
 
-        <!-- Columna con desplazamiento -->
-        <div class="col-lg-6">
-            <h3 class="text-blue-site text-overpassbold">COMISIÓN DIRECTIVA <br /> MANDATO 2022/2026:</h3>
-            <dl class="row">
-                <dt class="col-sm-4">PRESIDENTE:</dt><dd class="col-sm-6">ZIEDE, Omar René.</dd>
-                <dt class="col-sm-4">VICEPRESIDENTE:</dt><dd class="col-sm-6">CUYA, José Luis.</dd>
-                <dt class="col-sm-4">SECRETARIA:</dt><dd class="col-sm-8">MORÓN, Marta Beatriz</dd>
-                <dt class="col-sm-4">PROSECRETARIA:</dt><dd class="col-sm-8">ALARCÓN, Graciela</dd>
-                <dt class="col-sm-4">TESORERO:</dt><dd class="col-sm-8"> HAM, Juan Guillermo</dd>
-                <dt class="col-sm-4">PROTESORERO:</dt><dd class="col-sm-8"> GALLET, Jorge Enrique</dd>
-                <dt class="col-sm-4">SECRETARIA DE CAPACITACIÓN MUTUAL:</dt><dd class="col-sm-8">TRAVAGLIO, Mariángeles.</dd>
-            </dl>
-            <br />
-            <h3 class="text-blue-site text-overpassbold">MIEMBROS TITULARES:</h3>
+		
+      </ul>
+</div>
+	<div class="row m-auto">
+	    <div class="col-lg-12 mt-3" style="text-align: center">
             <ul class="list-unstyled">
+                <li>VICEPRESIDENTE: Cuya, José Luis</li>
+                <li>PROSECRETARIA: ALARCÓN, Graciela</li>
+                <li>PROTESORERO: GALLET, Jorge Enrique</li>
+                <li>SECRETARIA DE CAPACITACIÓN MUTUAL: TRAVAGLIO, Mariángeles</li>
+			</ul>
+          
+            <h3 class="text-blue-site text-overpassbold  mt-5">MIEMBROS TITULARES</h3>
+            <ul class="list-unstyled m-3">
                 <li>MACSARD, Roberto Tufik</li>
-                <li>ARMAS, Jorge Alberto</li>
-              
+                <li>ARMAS, Jorge Alberto</li>              
             </ul>
-            <h3 class="text-blue-site text-overpassbold">MIEMBROS SUPLENTES:</h3>
+
+            <h3 class="text-blue-site text-overpassbold mt-5">MIEMBROS SUPLENTES</h3>
             <ul class="list-unstyled">
                 <li>RAMÍREZ, Carlos Alberto</li>
                 <li>OLANO, Edgardo</li>
                 <li>OLIVARES, Oscar Hipólito</li>
                 <li>TROGNOT, Lilian Angelina</li>
-                <li>VILLEGA, Leandro Nicasio.</li>
+                <li>VILLEGA, Leandro Nicasio</li>
+            </ul>
+            
+            <h3 class="text-blue-site text-overpassbold mt-5">JUNTA FISCALIZADORA - Miembros Titulares</h3>
+            <ul class="list-unstyled">
+                Miembros Titulares:
+                
+                <li>TRAVAGLIO, José Armando Claudio</li>
+                <li>MOREL, Rubén Alberto</li>
+                <li>BASSO, Claudio Armando</li>
+                <li>ONGARO, José Eugenio.</li>
+            </ul>
+            
+            <h3 class="text-blue-site text-overpassbold mt-5">JUNTA FISCALIZADORA - Miembros Suplentes</h3>
+            <ul class="list-unstyled">
+                <li>VENTURA, Rubén Omar
+                <li>ACOSTA, Julio Néstor
+                <li>PIZZORNO, Ana Esther
+                <li>GINESTET, Eduardo Luis
+                <li>RAMÍREZ, Carlos Alberto</li>
+                <li>OLANO, Edgardo</li>
+                <li>OLIVARES, Oscar Hipólito</li>
+                <li>TROGNOT, Lilian Angelina</li>
+                <li>VILLEGA, Leandro Nicasio</li>
             </ul>
         </div>
+	</div>
 
-    </div>
 </div>
 
-<style type="text/css">
-    
-</style>
+<!-- Modal para ampliar imágenes -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-fluid" src="" alt="Ampliación de imagen">
+            </div>
+        </div>
+    </div>
+</div>

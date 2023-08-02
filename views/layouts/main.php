@@ -4,9 +4,7 @@
 /** @var string $content */
 use app\assets\AppAsset;
 use yii\bootstrap4\Html;
-use kartik\icons\Icon;
 
-Icon::map($this);
 
 AppAsset::register($this);
 
@@ -23,6 +21,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <head>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
+        
+     
     </head>
 
     
@@ -34,7 +34,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         </header>
 
         <!-- Contenido principal -->
-        <div class="container-lg content-site">
+        <div class="layout-site">
             <?= $content; ?>
         </div>
 
