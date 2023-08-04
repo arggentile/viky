@@ -111,9 +111,9 @@ body {
 }
 .layout-home {
     flex: 1;
-    padding-bottom: 190px;
     max-width: calc(100vw);
     padding-top: 110px;
+    overflow-y: hidden
 }
 
 .container-site {

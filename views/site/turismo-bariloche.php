@@ -113,12 +113,12 @@ $this->params['breadcrumbs'][] = $this->title;
             <p class=""> 
                 Contamos con 3 cabañas totalmente amobladas para 6 personas, con las siguientes comodidades: 
                 <ul class="list-unstyled">
-                    <li> <i class="fa-solid fa-circle"></i> 2 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle"></i> 1 baño </li>
-                    <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículo propio </li>
-                    <li> <i class="fa-solid fa-circle"></i> fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle"></i> televisor led con señal satelital </li>
-                    <li> <i class="fa-solid fa-circle"></i> WiFi </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 2 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 1 baño </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> estacionamiento para vehículo propio </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> WiFi </li>
                 </ul> 
             </p>
         </div>

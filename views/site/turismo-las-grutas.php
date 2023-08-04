@@ -123,14 +123,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 Contamos con 19 departamentos, totalmente amoblados para 6 personas, con las siguientes comodidades.
                 <ul class="list-unstyled">
 
-                    <li> <i class="fa-solid fa-circle"></i> 2 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle"></i> cocina/comedor </li>
-                    <li> <i class="fa-solid fa-circle"></i> 2 baños </li>
-                    <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículo propio  </li>
-                    <li> <i class="fa-solid fa-circle"></i> entrada para vehículo individual con fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle"></i> pequeño patio cerrado individual </li>
-                    <li> <i class="fa-solid fa-circle"></i> televisor led con señal satelital </li>
-                    <li> <i class="fa-solid fa-circle"></i> WIFI </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 2 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> cocina/comedor </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 2 baños </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> estacionamiento para vehículo propio  </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> entrada para vehículo individual con fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> pequeño patio cerrado individual </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> WIFI </li>
                 </ul>  
             </p>
         </div>

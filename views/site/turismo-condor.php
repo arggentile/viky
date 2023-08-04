@@ -146,24 +146,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 Cuenta con 8 departamentos, todos con vista al mar, con las siguientes comodidades.<br />
                 4 departamentos de planta baja equipados para 6 personas:
                 <ul class="list-unstyled">
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> 3 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> cocina/comedor </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> 1 baño </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> estacionamiento para vehículo propio </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> garage con fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> pequeño 	patio cerrado individual </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 3 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> cocina/comedor </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 1 baño </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> estacionamiento para vehículo propio </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> garage con fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> pequeño 	patio cerrado individual </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> televisor led con señal satelital </li>
                 </ul>             
                 <br />
                 4 departamentos en primer piso equipados para 6 personas:
                 <ul class="list-unstyled">
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> 3 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> cocina/comedor </li>
-                    <li><i class="fa-solid fa-circle fa-sm"></i> 1 baño </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> estacionamiento para vehículo propio </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i> amplio balcón con vista al mar </li>
-                    <li> <i class="fa-solid fa-circle fa-sm"></i>televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 3 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> cocina/comedor </li>
+                    <li><i class="fa-solid fa-circle fa-2xs"></i> 1 baño </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> estacionamiento para vehículo propio </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i> amplio balcón con vista al mar </li>
+                    <li> <i class="fa-solid fa-circle fa-2xs"></i>televisor led con señal satelital </li>
                 </ul>
                  
             </p>
