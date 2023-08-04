@@ -1,3 +1,6 @@
+.nav-item.dropdown:hover .dropdown-menu{
+    display: block;
+}
 @font-face {
     font-family: 'Overpass';
     src: url('/fonts/overpass/Overpass-Regular.ttf') format('truetype');
@@ -94,8 +97,7 @@ body {
     flex-direction: column;
     color: #2B454E;
 }
-#header {
-    height: 110px; 
+#header {   
     background-color: #f8f9fa;
 }
 #header .navbar {
@@ -104,13 +106,14 @@ body {
 .layout-site {
     flex: 1;
     padding-bottom: 225px;
+    padding-top: 110px;
     max-width: calc(100vw);
 }
 .layout-home {
     flex: 1;
     padding-bottom: 190px;
     max-width: calc(100vw);
-    margin-top: 1rem;
+    padding-top: 110px;
 }
 
 .container-site {
@@ -282,7 +285,7 @@ footer {
   .carousel-caption-home{
     position: absolute;
     right: 15%;
-    top: 15%;
+    top: 10%;
     left: 15%;
     z-index: 10;
     padding-top: 20px;
@@ -494,7 +497,13 @@ footer {
     margin: 5px 5px; 
 }
 
+.title-home{
+    font-size: 2.5rem;
+}
 
+.description-home{
+    font-size: 1.8rem;
+}
 .h-divider {
   margin: auto;
   margin-top: 8px;
@@ -583,6 +592,7 @@ footer {
 }
 .card-login{
     box-shadow: 0px 0px 21px 41px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    background-color: transparent
 }
 /*LOGIN*/
 
@@ -593,6 +603,7 @@ footer {
     
 .layout-site {
     padding-bottom: 10px;
+    padding-top: 109px;
 }
 .layout-home {
     padding-bottom: 10px;
@@ -612,15 +623,16 @@ footer {
     position: relative;
     width: 100%;
     padding: 10px;
-    background-color: #86CDBF;
+    background-color: #2B3372;
     z-index: 1000;
+    color: #fff;
 }
-
 
 .image-gallery > li {
   flex-basis: 100%   ; 
   position: relative;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .colfooterright {
@@ -629,6 +641,40 @@ footer {
 
 .p-descrip-page{
     font-size: 1rem;
+}
+
+.title-home{
+    font-size: 1.5rem;
+}
+
+.description-home{
+    font-size: 1rem;
+}
+.carousel-caption-home {
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    left: 7%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.btn-asociate-home {
+    text-transform: uppercase;
+    background-color: #2B454E;
+    color: #fff;
+    font-family: 'OverpassBold';
+    font-weight: bold;
+    font-size: 1.2em;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-color: #2B454E;
+    padding: 5px 15px;
+    font-size: 1.2rem;
 }
 
 }

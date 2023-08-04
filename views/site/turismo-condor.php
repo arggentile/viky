@@ -146,24 +146,24 @@ $this->params['breadcrumbs'][] = $this->title;
                 Cuenta con 8 departamentos, todos con vista al mar, con las siguientes comodidades.<br />
                 4 departamentos de planta baja equipados para 6 personas:
                 <ul class="list-unstyled">
-                    <li> <i class="fa-solid fa-circle"></i> 3 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle"></i> cocina/comedor </li>
-                    <li> <i class="fa-solid fa-circle"></i> 1 baño </li>
-                    <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículo propio </li>
-                    <li> <i class="fa-solid fa-circle"></i> garage con fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle"></i> pequeño 	patio cerrado individual </li>
-                    <li> <i class="fa-solid fa-circle"></i> televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> 3 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> cocina/comedor </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> 1 baño </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> estacionamiento para vehículo propio </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> garage con fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> pequeño 	patio cerrado individual </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> televisor led con señal satelital </li>
                 </ul>             
                 <br />
                 4 departamentos en primer piso equipados para 6 personas:
                 <ul class="list-unstyled">
-                    <li> <i class="fa-solid fa-circle"></i> 3 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle"></i> cocina/comedor </li>
-                    <li><i class="fa-solid fa-circle"></i> 1 baño </li>
-                    <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículo propio </li>
-                    <li> <i class="fa-solid fa-circle"></i> fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle"></i> amplio balcón con vista al mar </li>
-                    <li> <i class="fa-solid fa-circle"></i>televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> 3 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> cocina/comedor </li>
+                    <li><i class="fa-solid fa-circle fa-sm"></i> 1 baño </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> estacionamiento para vehículo propio </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i> amplio balcón con vista al mar </li>
+                    <li> <i class="fa-solid fa-circle fa-sm"></i>televisor led con señal satelital </li>
                 </ul>
                  
             </p>
@@ -224,10 +224,13 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <div class="col-sm-12">
         <?php
-        $tetxoTooltip = "<b>En avión</b>, hasta el aeropuerto de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
+        $tetxoTooltip = "
+<div class='' style='font-size: 1.2rem'>            
+<b>En avión</b>, hasta el aeropuerto de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
 <b>En colectivo</b>, desde todas las terminales nacionales, arribando a la terminal de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
 <b>En auto</b>, la distancia desde Buenos Aires es de 940 km.<br /><br />
-<b>En el tren Patagónico</b>, que atraviesa la provincia de Río negroy arriba en Viedma, luego en auto o colectivo hasta El Condor.";
+<b>En el tren Patagónico</b>, que atraviesa la provincia de Río negroy arriba en Viedma, luego en auto o colectivo hasta El Condor.</div>";
+        
         ?>
 <button type="button" class="btn text-overpassbold font3rem" data-toggle="popover" data-content="<?= $tetxoTooltip;?>"> <i class="fa-solid fa-location-dot fa-2xl"></i>¿Cómo llego?</button>
     </div>

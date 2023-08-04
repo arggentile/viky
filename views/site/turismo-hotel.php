@@ -7,13 +7,18 @@ use yii\helpers\Html;
 $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-
+<div class="cabecera-turismo cabecera-turismo-elcondor">
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+</div>
+<div class="container-site">
+<h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  HOTEL PEUMAYEN </h3>
 
     <div class="row  p-descrip-page">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column">
-            <h1 class="text-blue-site text-overpassbalck text-uppercase text-mar-prin"> HOTEL PEUMAYEN </h1>
-            <p class="text-justify"> 
+        <div class="col-lg-6 scroll-column text-align-right">
+            <span class="text-overpassbalck"> El Hotel </span>
+            <p> 
                 Nuestro Hotel se encuentra en la ciudad de Viedma, en calle Buenos Aires 334, en pleno centro comercial de la ciudad.<br /><br />
                 Su excelente ubicación, lo sitúa a pocos metros de los atractivos turísticos de la ciudad, como así también de la mejor oferta gastronómica.<br /><br />
                 Cuenta con los siguientes servicios: habitaciones single, dobles, triples, cuadruples y quintuple, TV, desayuno buffet, WiFi, Cochera.<br /><br />

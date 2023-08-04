@@ -7,15 +7,15 @@ $this->title = 'Institucional';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<div class="container-site mt-1">
+<div class="container-site mt-2">
     <div class="row">
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column p-descrip-page">
-        <h1 class="text-blue-site text-overpassbalck 3rem text-uppercase text-mar-prin"> 
-            Mutual Personal  <br />
-            Banco de la Provincia <br /> de Rio Negro
-        </h1>
-                
+            <h1 class="text-blue-site text-overpassbalck 3rem text-uppercase text-mar-prin"> 
+                Mutual Personal  <br />
+                Banco de la Provincia <br /> de Rio Negro
+            </h1>
+
                     <p class="text-justify">
                         Fundada el 23 de julio de 1966, tiene sede en calle gallardo 49 de la ciudad de Viedma, provincia de Río Negro,
                          su radio de acción abarca toda la provincia así como lugares fuera de ella.<br /> <br />

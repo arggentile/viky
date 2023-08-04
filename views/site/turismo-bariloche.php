@@ -7,13 +7,17 @@ use yii\helpers\Html;
 $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-
-
+<div class="cabecera-turismo cabecera-turismo-elcondor">
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+</div>
+<div class="container-site">
+<h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Bariloche </h3>
     <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> BARILOCHE </h3>
-            <p class=""> 
+        <div class="col-lg-6 scroll-column text-align-right">
+            <span class="text-overpassbalck"> Bariloche </span>
+            <p> 
                 Bariloche es una ciudad ubicada entre bosques milenarios, montañas cubiertas de nieve 
                 y lagos cristalinos, en la provincia de Río Negro, Argentina. Se trata de una postal de nuestra Patagonia.
                 Una ciudad anfitriona por excelencia, enmarcada por algunas de las bellezas naturales más importantes del país.
@@ -52,11 +56,11 @@ $this->params['breadcrumbs'][] = $this->title;
           
     </div>
 
-<div class="divider"></div>
+    <div class="divider"></div>
 
 
 
-<div class="row p-descrip-page">
+    <div class="row p-descrip-page">
     <div class="col-lg-6 carousel-column">
             <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -98,9 +102,9 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column">
-            <h3 class="text-blue-site text-overpassbalck text-uppercase"> Nuestro Complejo: </h3>
-            <p class=""> 
+        <div class="col-lg-6 scroll-column text-align-left">
+            <span class="text-overpassbalck"> Nuestro Complejo </span>
+            <p> 
                 Está ubicado en Calle Foyel 5243, a la altura del kilómetro 5 de la Avenida E. Bustillo, a 200mts
                 del lago Nahuel Huapi y de las mejores ofertas gastronómicas de la ciudad. A su vez, se encuentra 
                 a sólo 700mts del Teleférico del Cerro Otto.
@@ -108,16 +112,17 @@ $this->params['breadcrumbs'][] = $this->title;
             </p>
             <p class=""> 
                 Contamos con 3 cabañas totalmente amobladas para 6 personas, con las siguientes comodidades: 
-                <ul>
-                    <li> 2 dormitorios </li>
-                    <li> 1 baño </li>
-                    <li> estacionamiento para vehículo propio </li>
-                    <li> fogón y parrilla </li>
-                    <li> televisor led con señal satelital </li>
-                    <li> WiFi </li>
+                <ul class="list-unstyled">
+                    <li> <i class="fa-solid fa-circle"></i> 2 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle"></i> 1 baño </li>
+                    <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículo propio </li>
+                    <li> <i class="fa-solid fa-circle"></i> fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle"></i> televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle"></i> WiFi </li>
                 </ul> 
             </p>
         </div>
 
         
     </div>
+</div>

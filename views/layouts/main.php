@@ -5,7 +5,6 @@
 use app\assets\AppAsset;
 use yii\bootstrap4\Html;
 
-
 AppAsset::register($this);
 
 $this->registerCsrfMetaTags();
@@ -21,13 +20,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <head>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        
-     
+
+
     </head>
 
-    
+
     <body class="d-flex flex-column h-100">
-<?php $this->beginBody() ?>
+        <?php $this->beginBody() ?>
 
         <header id="header" class="header">
             <?= $this->render('menu'); ?>
@@ -40,7 +39,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
         <?= $this->render('_footer'); ?>
 
-<?php $this->endBody() ?>
+        <?php $this->endBody() ?>
 
     </body>
 </html>

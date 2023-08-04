@@ -17,7 +17,7 @@
             ?>
             <li class="nav-item dropdown">
 
-                <a class="nav-link dropdown-toggle <?= $activemenu; ?>" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link  <?= $activemenu; ?>" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     INICIO
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,7 +42,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="<?= yii\helpers\Url::to(['/site/turismo-principal']); ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-item dropdown-toggle" href="<?= yii\helpers\Url::to(['/site/turismo-principal']); ?>">
                     Turismo
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">

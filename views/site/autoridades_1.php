@@ -11,49 +11,49 @@ $this->params['breadcrumbs'][] = $this->title;
     <img class="d-block w-100" src="<?= $directorioImagenes . 'banner.jpg'; ?>" alt="banner autoridades" />
 </div>
 <div class="container-site mt-1">
-    <div class="con-augtoridades mt-3">
-        <h3 class="mt-5 mb-5 text-center"> <span class="text-overpassbold text-blue-site"> Comisión directiva: </span> Autoridades</h3>
+<div class="con-augtoridades mt-3">
+     <h3 class="mt-5 mb-5 text-center"> <span class="text-overpassbold text-blue-site"> Comisión directiva: </span> Autoridades</h3>
+             
+    <ul class="image-gallery">
+        <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'autoridades' . DIRECTORY_SEPARATOR; ?>
+        <li>
+          <img src="<?= $directorioImagenes . 'presidente.jpg'; ?>" alt="" />
+          <div class="overlay"><span>Presidente</span></div>
+			<div class="overlay1">
+				  <span class="text-overpassbolditalic"> Presidente: </span> 
+				  <br /><span class=""> ZIEDE, Omar René </span>
+			  </div>
+        </li> 
+		<li>
+          <img src="<?= $directorioImagenes . 'tesorero.jpg'; ?>" alt="" />
+          <div class="overlay"><span>Tesorero</span></div>
+			    <div class="overlay1">
+				  <span class="text-overpassbolditalic"> Tesorero: </span> 
+				  <br /><span class=""> HAM, Juan Guillermo </span>
+			  </div>
+        </li>
+        <li>
+          <img src="<?= $directorioImagenes . 'secretaria.jpg'; ?>" alt="" />
+          <div class="overlay"><span>Secretaria</span></div>
+			<div class="overlay1">
+				  <span class="text-overpassbolditalic"> Secretaria: </span> 
+				  <br /><span class=""> MORÓN, Marta Beatriz </span>
+			  </div>
+        </li>
 
-        <ul class="image-gallery">
-            <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'autoridades' . DIRECTORY_SEPARATOR; ?>
-            <li>
-                <img src="<?= $directorioImagenes . 'presidente.jpg'; ?>" alt="" />
-                <div class="overlay"><span>Presidente</span></div>
-                <div class="overlay1">
-                    <span class="text-overpassbolditalic"> Presidente: </span> 
-                    <br /><span class=""> ZIEDE, Omar René </span>
-                </div>
-            </li> 
-            <li>
-                <img src="<?= $directorioImagenes . 'tesorero.jpg'; ?>" alt="" />
-                <div class="overlay"><span>Tesorero</span></div>
-                <div class="overlay1">
-                    <span class="text-overpassbolditalic"> Tesorero: </span> 
-                    <br /><span class=""> HAM, Juan Guillermo </span>
-                </div>
-            </li>
-            <li>
-                <img src="<?= $directorioImagenes . 'secretaria.jpg'; ?>" alt="" />
-                <div class="overlay"><span>Secretaria</span></div>
-                <div class="overlay1">
-                    <span class="text-overpassbolditalic"> Secretaria: </span> 
-                    <br /><span class=""> MORÓN, Marta Beatriz </span>
-                </div>
-            </li>
 
-
-
-        </ul>
-    </div>
-    <div class="row m-auto">
-        <div class="col-lg-12 mt-3" style="text-align: center">
-            <ul class="list-unstyled">
-                <li>VICEPRESIDENTE: Cuya, José Luis</li>
-                <li>PROSECRETARIA: ALARCÓN, Graciela</li>
-                <li>PROTESORERO: GALLET, Jorge Enrique</li>
-                <li>SECRETARIA DE CAPACITACIÓN MUTUAL: TRAVAGLIO, Mariángeles</li>
-            </ul>
-
+		
+      </ul>
+</div>
+	<div class="row m-auto">
+	    <div class="col-lg-12 mt-3 text-center">
+                <ul class="list-unstyled">
+                    <li>VICEPRESIDENTE: Cuya, José Luis</li>
+                    <li>PROSECRETARIA: ALARCÓN, Graciela</li>
+                    <li>PROTESORERO: GALLET, Jorge Enrique</li>
+                    <li>SECRETARIA DE CAPACITACIÓN MUTUAL: TRAVAGLIO, Mariángeles</li>
+                            </ul>
+          
             <h3 class="text-blue-site text-overpassbold  mt-5">MIEMBROS TITULARES</h3>
             <ul class="list-unstyled m-3">
                 <li>MACSARD, Roberto Tufik</li>
@@ -68,17 +68,17 @@ $this->params['breadcrumbs'][] = $this->title;
                 <li>TROGNOT, Lilian Angelina</li>
                 <li>VILLEGA, Leandro Nicasio</li>
             </ul>
-
+            
             <h3 class="text-blue-site text-overpassbold mt-5">JUNTA FISCALIZADORA - Miembros Titulares</h3>
             <ul class="list-unstyled">
                 Miembros Titulares:
-
+                
                 <li>TRAVAGLIO, José Armando Claudio</li>
                 <li>MOREL, Rubén Alberto</li>
                 <li>BASSO, Claudio Armando</li>
                 <li>ONGARO, José Eugenio.</li>
             </ul>
-
+            
             <h3 class="text-blue-site text-overpassbold mt-5">JUNTA FISCALIZADORA - Miembros Suplentes</h3>
             <ul class="list-unstyled">
                 <li>VENTURA, Rubén Omar
@@ -92,7 +92,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <li>VILLEGA, Leandro Nicasio</li>
             </ul>
         </div>
-    </div>
+	</div>
 
 </div>
 

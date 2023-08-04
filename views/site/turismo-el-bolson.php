@@ -7,13 +7,19 @@ use yii\helpers\Html;
 $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="cabecera-turismo cabecera-turismo-elcondor">
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+</div>
+<div class="container-site">
+<h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  El Bolson </h3>
 
 
     <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column">
-            <h1 class="text-blue-site text-overpassbalck text-uppercase text-mar-prin"> EL BOLSON </h1>
-            <p class=""> 
+        <div class="col-lg-6 scroll-column text-align-right">
+            <span class="text-overpassbalck"> El Bolson </span>
+            <p> 
                 El Bolsón se encuentra en el departamento Bariloche, al sudoeste de la provincia de Río Negro y a 18 Km.
                 del Parque Nacional Lago Puelo en la Provincia de Chubut. Favorecido por un microclima apacible, este pueblo de
                 montaña está preparado para recibir a todo tipo de visitantes. Naturaleza, aventura, historia, mitos, cultura y tranquilidad 
@@ -87,21 +93,21 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column">
-            <h1 class="text-blue-site text-overpassbalck text-uppercase text-mar-prin"> Nuestro Complejo: </h1>
-            <p class=""> 
+        <div class="col-lg-6 scroll-column text-align-left">
+            <span class="text-overpassbalck"> Nuestro Complejo </span>
+            <p > 
                 Se sitúa al pie del cerro Piltriquitrón, contamos con un predio totalmente parquizado de más de 10.000mts2, de fácil acceso, garantizando tranquilidad para tu familia.
             </p>
-            <p class="text-justify"> 
+            <p> 
                 Contamos con 3 cabañas totalmente amobladas para 6 personas, con las siguientes comodidades:
-                <ul>
-                    <li> 2 dormitorios </li>
-                    <li> cocina/comedor </li>
-                    <li> 1 baño </li>
-                    <li> estacionamiento para vehículo propio </li>
-                    <li> fogón y parrilla </li>
-                    <li> televisor led con señal satelital </li>
-                    <li> WiFi </li>
+                <ul class="list-unstyled">
+                    <li> <i class="fa-solid fa-circle"></i> 2 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle"></i> cocina/comedor </li>
+                    <li> <i class="fa-solid fa-circle"></i> 1 baño </li>
+                    <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículo propio </li>
+                    <li> <i class="fa-solid fa-circle"></i> fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle"></i> televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle"></i> WiFi </li>
                 </ul>
             </p>
         </div>

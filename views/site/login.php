@@ -10,9 +10,8 @@ $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="login-box">
-    <div class="card card-login" style="background-color: transparent">
+    <div class="card card-login">
         <div class="card-body login-card-body">
-
             <?php $form = ActiveForm::begin(['id' => 'login-form', 'enableClientValidation' => true]); ?>
             <form action="login.html" method="post">
                 <div class="input-group mb-3">
@@ -37,9 +36,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 </div>
                 <?php ActiveForm::end(); ?>
-
-
         </div>
-
     </div>
 </div>

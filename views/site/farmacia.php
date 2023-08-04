@@ -1,19 +1,17 @@
 <?php
 
 /** @var yii\web\View $this */
-use yii\helpers\Html;
-use kartik\icons\Icon;
-
-Icon::map($this);
 
 $this->title = 'Farmacia';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="container-site">
+<div class="container-site mt-4">
     <div class="row">      
         <div class="col-sm-12">
-            <h3 class="text-center mt-1 mb-1"> <span class="text-overpassbold text-blue-site">  Farmacia Mutual Peumayen.  </span> Descuentos </h3>
+            <h3 class="text-center mt-1 mt-2 mb-2"> <span class="text-overpassbold text-blue-site">  Farmacia Mutual Peumayen.  </span> Descuentos </h3>
         </div>      
+    </div>
+    <div class="row">
         <div class="offset-lg-1  col-lg-10 col-sm-12 margin-auto">
             <div class="carousel-column">
                 <div id="carouselExampleIndicators-carouselExampleIndicators-farmacia" class="carouselExampleIndicators carousel slide" data-ride="carousel">
@@ -64,6 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
             
         </div>
     </div>
+   
 </div>
 
 

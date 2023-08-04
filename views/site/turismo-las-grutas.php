@@ -7,12 +7,18 @@ use yii\helpers\Html;
 $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="cabecera-turismo cabecera-turismo-elcondor">
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+</div>
+<div class="container-site">
+<h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Las Grutas </h3>
 
 
     <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column">
-            <h1 class="text-blue-site text-overpassbalck text-uppercase"> Las Grutas </h1>
+        <div class="col-lg-6 scroll-column text-align-right ">
+            <span class="text-overpassbalck"> Las Grutas </span>
             <p class=""> 
                 Las Grutas es una villa balnearia argentina ubicada en la provincia de Río Negro en el noreste de la 
                 Patagonia argentina. Se encuentra dentro del ejido municipal de la ciudad de San Antonio Oeste.<br />
@@ -108,23 +114,23 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column">
-            <h1 class="text-blue-site text-overpassbalck text-uppercase"> Nuestro Complejo: </h1>
+        <div class="col-lg-6 scroll-column text-align-left">
+            <span class="text-overpassbalck"> Nuestro Complejo</span>
             <p class=""> 
                 Está situado en pleno centro peatonal del balneario, a metros de las mejores ofertas gastronómicas, 
                 teatro, centro de compras, y a solo 100mts del mar.<br />
                 <br />
                 Contamos con 19 departamentos, totalmente amoblados para 6 personas, con las siguientes comodidades.
-                <ul class="lis-unstyled">
+                <ul class="list-unstyled">
 
-                    <li> 2 dormitorios </li>
-                    <li> cocina/comedor </li>
-                    <li> 2 baños </li>
-                    <li> estacionamiento para vehículo propio  </li>
-                    <li> entrada para vehículo individual con fogón y parrilla </li>
-                    <li> pequeño patio cerrado individual </li>
-                    <li> televisor led con señal satelital </li>
-                    <li> WIFI </li>
+                    <li> <i class="fa-solid fa-circle"></i> 2 dormitorios </li>
+                    <li> <i class="fa-solid fa-circle"></i> cocina/comedor </li>
+                    <li> <i class="fa-solid fa-circle"></i> 2 baños </li>
+                    <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículo propio  </li>
+                    <li> <i class="fa-solid fa-circle"></i> entrada para vehículo individual con fogón y parrilla </li>
+                    <li> <i class="fa-solid fa-circle"></i> pequeño patio cerrado individual </li>
+                    <li> <i class="fa-solid fa-circle"></i> televisor led con señal satelital </li>
+                    <li> <i class="fa-solid fa-circle"></i> WIFI </li>
                 </ul>  
             </p>
         </div>
