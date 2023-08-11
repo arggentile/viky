@@ -15,9 +15,9 @@ $this->params['breadcrumbs'][] = $this->title;
 <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  El Bolson </h3>
 
 
-    <div class="row p-descrip-page">
+    <div class="row p-descrip-page mt-3">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-align-right">
+        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column text-overpassthin text-align-right">  
             <span class="text-overpassbalck"> El Bolson </span>
             <p> 
                 El Bolsón se encuentra en el departamento Bariloche, al sudoeste de la provincia de Río Negro y a 18 Km.
@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </p>
         </div>
 
-        <div class="col-lg-6 carousel-column">
+        <div class="col-lg-6 pl-lg-5 carousel-column">
             <div id="carouselExampleIndicators1" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 <div class="row p-descrip-page">
-    <div class="col-lg-6 carousel-column">
+    <div class="col-lg-6 pr-lr-5 pr-md-5 carousel-column">
             <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 
                 <div class="carousel-inner">
@@ -93,7 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-align-left">
+        <div class="col-lg-6 pl-lg-5 pl-md-5 scroll-column text-overpassthin text-align-left">
             <span class="text-overpassbalck"> Nuestro Complejo </span>
             <p > 
                 Se sitúa al pie del cerro Piltriquitrón, contamos con un predio totalmente parquizado de más de 10.000mts2, de fácil acceso, garantizando tranquilidad para tu familia.

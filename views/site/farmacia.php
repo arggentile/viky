@@ -5,14 +5,20 @@
 $this->title = 'Farmacia';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="container-site mt-4">
+
+<div class="cabecera-turismo cabecera-turismo-elcondor">
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'farmacia' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+</div>
+
+<div class="container-site">
     <div class="row">      
         <div class="col-sm-12">
-            <h3 class="text-center mt-1 mt-2 mb-2"> <span class="text-overpassbold text-blue-site">  Farmacia Mutual Peumayen.  </span> Descuentos </h3>
+            <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Farmacia Mutual Peumayen.  </span> Descuentos </h3>
         </div>      
     </div>
-    <div class="row">
-        <div class="offset-lg-1  col-lg-10 col-sm-12 margin-auto">
+    <div class="row mt-3">
+        <div class="offset-lg-2  col-lg-8 col-sm-12 margin-auto">
             <div class="carousel-column">
                 <div id="carouselExampleIndicators-carouselExampleIndicators-farmacia" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -40,8 +46,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
     </div>
-    <div class="row mt-4">
-        <div class="col-sm-12 text-center ">
+    <div class=" row mt-4">
+        <div class="offset-lg-2  col-lg-8 col-sm-12 text-center  margin-auto texto-farmacia">
             Beneficios en tarifas por ser parte de nuestra mutual, como socio adherente voluntario<br /><br />
             Contamos con toda la línea de medicamentos recetados y de venta libre,
             como así también una amplia gama en perfumería y estética personal.<br />
@@ -52,7 +58,6 @@ $this->params['breadcrumbs'][] = $this->title;
                 <span clas=""> Lunes a Viernes: 08.30 A 13HS / 16.30 a 20.30 </span>
                 <br /><span clas=""> Sábados: de 9 a 13hs. </span>
             </p>
-
             <h3 class="text-blue-site text-overpassbold text-uppercase mt-5"> Contactos: </h3> 
             <p>
                 <span clas=""><i class="fas fa-map-marker"></i> GALLARDO 49, VIEDMA, RÍO NEGRO. C.P: 8500</span><br />

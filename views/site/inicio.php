@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="col-lg-4 col-md-8 col-xs-12 carousel-caption  carousel-caption-home">
                     <span class="text-blue-site text-overpassbalck  text-justify  text-uppercase title-home">Sabias de nuestros descuentos en alojamientos?</span>
                     <p class="text-blue-site description-home">Contamos con diferentes puntos túristicos de la provincia de Río Negro, asociate y aprovecha los beneficios</p>
-                    <a href="<?= \yii\helpers\Url::to(['/site/turismo-principal']); ?>" class="btn btn-asociate-home"> conocelos </a>
+                    
                 </div>
             </div>
         </div>

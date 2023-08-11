@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Camping y complejo. </span> El Condor </h3>
     <div class="row p-descrip-page mt-3">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-overpassthin text-align-right">            
+        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column  text-align-right">            
             <span class="text-overpassbalck"> El Condor </span>
             <p>
                 Esta Villa Balnearia es el principal centro de servicios del Camino de la Costa, 
@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 Un atractivo para toda la familia es la posibilidad de deleitarse con la visita de ballenas entre julio y octubre.</p>
         </div>
 
-        <div class="col-lg-6 carousel-column">
+        <div class="col-lg-6 pl-lg-5 carousel-column">
             <div id="carouselExampleIndicators1" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
                 <div class="carousel-inner">
@@ -98,7 +98,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Columna con desplazamiento -->
         
 
-        <div class="col-lg-6 carousel-column">
+        <div class="col-lg-6 pr-lr-5 pr-md-5 carousel-column">
             <div id="carouselExampleIndicators3" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -137,7 +137,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
         
-        <div class="col-lg-6 scroll-column text-overpassthin text-align-left">
+        <div class="col-lg-6 pl-lg-5 pl-md-5 scroll-column text-align-left">
             <span class="text-overpassbalck"> Nuestro Complejo: </span>
             <p> Está situado frente al mar, en Playa Central. A metros de los mejores locales gastronómicos del balneario y a 50 mts. del Casino.
 
@@ -145,25 +145,25 @@ $this->params['breadcrumbs'][] = $this->title;
             <p>
                 Cuenta con 8 departamentos, todos con vista al mar, con las siguientes comodidades.<br />
                 4 departamentos de planta baja equipados para 6 personas:
-                <ul class="list-unstyled">
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 3 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> cocina/comedor </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 1 baño </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> estacionamiento para vehículo propio </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> garage con fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> pequeño 	patio cerrado individual </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> televisor led con señal satelital </li>
+            <ul class="list-right">
+                    <li>  3 dormitorios </li>
+                    <li>  cocina/comedor </li>
+                    <li>  1 baño </li>
+                    <li>  estacionamiento para vehículo propio </li>
+                    <li>  garage con fogón y parrilla </li>
+                    <li>  pequeño 	patio cerrado individual </li>
+                    <li>  televisor led con señal satelital </li>
                 </ul>             
                 <br />
                 4 departamentos en primer piso equipados para 6 personas:
-                <ul class="list-unstyled">
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> 3 dormitorios </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> cocina/comedor </li>
-                    <li><i class="fa-solid fa-circle fa-2xs"></i> 1 baño </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> estacionamiento para vehículo propio </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> fogón y parrilla </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i> amplio balcón con vista al mar </li>
-                    <li> <i class="fa-solid fa-circle fa-2xs"></i>televisor led con señal satelital </li>
+                <ul class="list-right">
+                    <li> 3 dormitorios </li>
+                    <li> cocina/comedor </li>
+                    <li> 1 baño </li>
+                    <li> estacionamiento para vehículo propio </li>
+                    <li> fogón y parrilla </li>
+                    <li> amplio balcón con vista al mar </li>
+                    <li> televisor led con señal satelital </li>
                 </ul>
                  
             </p>
@@ -177,24 +177,24 @@ $this->params['breadcrumbs'][] = $this->title;
        
         
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-overpassthin text-align-right">
+        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column  text-align-right">
             <span class="text-overpassbalck"> Nuestro Camping </span>
             <p> Está situado a 100mts del mar, en Playa Central. A metros de los mejores locales gastronómicos del balneario y a 100 mts. del Casino.
             </p>
             <p>
                 Contamos con 22 boxs, con las siguientes comodidades: 
-            <ul class="list-unstyled">
-                <li> <i class="fa-solid fa-circle"></i> fogón</li>
-                <li> <i class="fa-solid fa-circle"></i> baños</li>
-                <li> <i class="fa-solid fa-circle"></i> duchas</li>
-                <li> <i class="fa-solid fa-circle"></i> zona de lavandería</li>
-                <li> <i class="fa-solid fa-circle"></i> estacionamiento para vehículos</li>
+            <ul class="">
+                <li> fogón</li>
+                <li> baños</li>
+                <li> duchas</li>
+                <li> zona de lavandería</li>
+                <li> estacionamiento para vehículos</li>
                 
             </ul>         
             </p>
         </div>
         
-         <div class="col-lg-6 carousel-column">
+         <div class="col-lg-6 pr-lg-5 pr-md-5 carousel-column">
             <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -222,17 +222,29 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     
     
-    <div class="col-sm-12">
+    <div class="col-sm-12 ">
         <?php
         $tetxoTooltip = "
-<div class='' style='font-size: 1.2rem'>            
+
+<div class='popup-elcondor  text-blue-site'>            
 <b>En avión</b>, hasta el aeropuerto de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
 <b>En colectivo</b>, desde todas las terminales nacionales, arribando a la terminal de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
 <b>En auto</b>, la distancia desde Buenos Aires es de 940 km.<br /><br />
-<b>En el tren Patagónico</b>, que atraviesa la provincia de Río negroy arriba en Viedma, luego en auto o colectivo hasta El Condor.</div>";
+<b>En el tren Patagónico</b>, que atraviesa la provincia de Río negroy arriba en Viedma, luego en auto o colectivo hasta El Condor.
+<div class='d-flex'>
+    <div class='w-50 display-inlineblock'>
+        <span class=''><i class='fa-solid fa-location-dot fa-2xl'></i> camping </span>
+    </div>
+    <div class='w-50 display-inlineblock text-align-right'>    
+        <span class=''><i class='fa-solid fa-location-dot fa-2xl'></i> complejo </span>
+    </div>
+</div>
+</div>
+    
+    ";
         
         ?>
-<button type="button" class="btn text-overpassbold font3rem" data-toggle="popover" data-content="<?= $tetxoTooltip;?>"> <i class="fa-solid fa-location-dot fa-2xl"></i>¿Cómo llego?</button>
+        <button type="button" class="btn text-overpassbold font3rem" data-toggle="popover" data-content="<?= $tetxoTooltip;?>"> <span class="float-left"> <i class="fa-solid fa-location-dot fa-2xl"></i></span><span>¿Cómo <br /> llego? </span></button>
     </div>
 
 

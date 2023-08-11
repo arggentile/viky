@@ -17,9 +17,10 @@
             ?>
             <li class="nav-item dropdown">
 
-                <a class="nav-link  <?= $activemenu; ?>" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    INICIO
-                </a>
+                <a href="<?= yii\helpers\Url::to(['/']);?>" class="btn <?= $activemenu; ?>">Inicio</a>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item " href="<?= yii\helpers\Url::to(['/site/institucional']); ?>">Institucional</a>
                     <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/autoridades']); ?>">Autoridades</a>
@@ -33,20 +34,30 @@
             ?>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle <?= $activemenu; ?>" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Beneficios
-                </a>
+                <a href="<?= yii\helpers\Url::to(['/site/beneficios']);?>" class="btn <?= $activemenu; ?>">beneficios</a>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/farmacia']); ?>">Farmacia</a>
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/beneficios']); ?>">Otros</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-item dropdown-toggle" href="<?= yii\helpers\Url::to(['/site/turismo-principal']); ?>">
-                    Turismo
-                </a>
+                  <?php
+            $activemenu = ($this->context->route == 'site/turismo-principal' ||
+                    $this->context->route == 'site/turismo-club' ||
+                    $this->context->route == 'site/turismo-hotel' || 
+                    $this->context->route == 'site/turismo-condor' || 
+                    $this->context->route == 'site/turismo-las-grutas' || 
+                    $this->context->route == 'site/turismo-bolson' || 
+                    $this->context->route == 'site/turismo-bariloche' ) ? 'active' : '';
+            ?>
+                
+                <a href="<?= yii\helpers\Url::to(['/site/turismo-principal']);?>" class="btn <?= $activemenu; ?>">Turismo</a>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-principal']); ?>"> Turismo </a>
                     <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-club']); ?>">Club</a>
                     <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-hotel']); ?>">Hotel</a>
                     <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-condor']); ?>">El Condor</a>
@@ -56,14 +67,14 @@
                 </div>
             </li>
 
-
-            <li class="nav-item">
-                <a class="nav-link" href="<?= yii\helpers\Url::to(['/site/asociate']); ?>">Asociate</a>
+        <?php
+            $activemenu = ($this->context->route == 'site/asociate' ) ? 'active' : '';
+            ?>
+            <li class="nav-item <?= $activemenu; ?>">
+                <a class="nav-link <?= $activemenu; ?>" href="<?= yii\helpers\Url::to(['/site/asociate']); ?>">Asociate</a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Ayuda Economica</a>
-            </li>
+        
 
         </ul>
 

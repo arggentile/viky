@@ -6,13 +6,13 @@ use yii\helpers\Html;
 $this->title = 'Autoridades';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="cabecera-autoridades">
+<div class="cabecera-autoridades" style="max-height: 150px;">
     <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'autoridades' . DIRECTORY_SEPARATOR; ?>
-    <img class="d-block w-100" src="<?= $directorioImagenes . 'banner.jpg'; ?>" alt="banner autoridades" />
+    <img class="d-block w-100" style="max-height: 150px;" src="<?= $directorioImagenes . 'banner.jpg'; ?>" alt="banner autoridades" />
 </div>
-<div class="container-site mt-1">
+<div class="container-lg">
     <div class="con-augtoridades mt-3">
-        <h3 class="mt-5 mb-5 text-center"> <span class="text-overpassbold text-blue-site"> Comisión directiva: </span> Autoridades</h3>
+        <h3 class="mt-4 mb-4 text-center"> <span class="text-overpassbold text-blue-site"> Comisión directiva: </span> Autoridades</h3>
 
         <ul class="image-gallery">
             <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'autoridades' . DIRECTORY_SEPARATOR; ?>
@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <img src="<?= $directorioImagenes . 'presidente.jpg'; ?>" alt="" />
                 <div class="overlay"><span>Presidente</span></div>
                 <div class="overlay1">
-                    <span class="text-overpassbolditalic"> Presidente: </span> 
+                    <span class="text-overpassbolditalic"> Presidente </span> 
                     <br /><span class=""> ZIEDE, Omar René </span>
                 </div>
             </li> 
@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <img src="<?= $directorioImagenes . 'tesorero.jpg'; ?>" alt="" />
                 <div class="overlay"><span>Tesorero</span></div>
                 <div class="overlay1">
-                    <span class="text-overpassbolditalic"> Tesorero: </span> 
+                    <span class="text-overpassbolditalic"> Tesorero </span> 
                     <br /><span class=""> HAM, Juan Guillermo </span>
                 </div>
             </li>
@@ -36,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <img src="<?= $directorioImagenes . 'secretaria.jpg'; ?>" alt="" />
                 <div class="overlay"><span>Secretaria</span></div>
                 <div class="overlay1">
-                    <span class="text-overpassbolditalic"> Secretaria: </span> 
+                    <span class="text-overpassbolditalic"> Secretaria </span> 
                     <br /><span class=""> MORÓN, Marta Beatriz </span>
                 </div>
             </li>

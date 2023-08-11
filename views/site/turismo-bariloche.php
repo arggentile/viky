@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Bariloche </h3>
     <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-align-right">
+        <div class="col-lg-6 pr-lg-5 pr-md-5  scroll-column text-align-right text-overpassthin">
             <span class="text-overpassbalck"> Bariloche </span>
             <p> 
                 Bariloche es una ciudad ubicada entre bosques milenarios, montañas cubiertas de nieve 
@@ -102,7 +102,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-align-left">
+        <div class="col-lg-6 pl-lg-5 pl-md-5  scroll-column text-align-left text-overpassthin">
             <span class="text-overpassbalck"> Nuestro Complejo </span>
             <p> 
                 Está ubicado en Calle Foyel 5243, a la altura del kilómetro 5 de la Avenida E. Bustillo, a 200mts

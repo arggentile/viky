@@ -1,9 +1,15 @@
-IndexIgnore */*
+Options -Indexes
+
 RewriteEngine on
-# if a directory or a file exists, use it directly
+ 
+RewriteCond %{THE_REQUEST} !^(POST|GET|PUT|OPTIONS)\ /.*\ HTTP/1\.1$ 
+RewriteRule .* - [F]
+
+# If a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-# otherwise forward it to index.php
+# Otherwise forward it to index.php
 RewriteRule . index.php
-Options All Indexes
-IndexOptions -FancyIndexing
+
+php_value upload_max_filesize 100M
+php_value post_max_size 400M

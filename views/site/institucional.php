@@ -7,13 +7,12 @@ $this->title = 'Institucional';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<div class="container-site mt-2">
+<div class="container-site mt-5">
     <div class="row">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column p-descrip-page">
+        <div class="col-lg-6 scroll-column p-descrip-page mb-md-5">
             <h1 class="text-blue-site text-overpassbalck 3rem text-uppercase text-mar-prin"> 
-                Mutual Personal  <br />
-                Banco de la Provincia <br /> de Rio Negro
+               Una mutual para todos. <br /> Desde siempre 
             </h1>
 
                     <p class="text-justify">
@@ -40,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </ul> 
         </div>
 
-        <div class="col-lg-6 carousel-column">
+        <div class="col-lg-6 carousel-column pl-lg-5 mt-md-5">
             <div id="carouselExampleIndicators-institucional" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators-institucional" data-slide-to="0" class="active"></li>

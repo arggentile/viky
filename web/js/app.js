@@ -24,6 +24,7 @@ $(".carousel-control-prev").click(function(){
 
     
    $(function () {
-        $('[data-toggle="popover"]').popover({html : true,});
+        $('[data-toggle="popover"]').popover({html : true, container: 'body'});
+
     });
     

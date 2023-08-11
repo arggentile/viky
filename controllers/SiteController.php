@@ -178,8 +178,16 @@ class SiteController extends Controller
      */
     public function actionBeneficios()
     {
-        
-        return $this->render('beneficios');
+        try{
+            $modelbeneficios = \app\models\Beneficios::find()->all();
+        } catch (\yii\base\Exception $e) {
+            if($transaction->isActive)$transaction->rollBack();            
+            
+            var_dump($e->getMessage());  exit;
+            \Yii::$app->getSession()->setFlash('error', 'Excepcion. ' . $e->getMessage());
+            \Yii::$app->getModule('audit')->data('catchedexc', \yii\helpers\VarDumper::dumpAsString($e));
+        }
+        return $this->render('beneficios', ['beneficios' => $modelbeneficios]);
     }
     
     /**
@@ -332,4 +340,47 @@ class SiteController extends Controller
         
         return $this->render('turismo-las-grutas');
     }
+    
+    public  function actionDownload() {
+       try {   
+            $idMultimedia = Yii::$app->request->get('id');
+       
+            $urlprev = Yii::$app->request->referrer;
+            
+            $multimedia = \app\models\Multimedia::findOne($idMultimedia);
+            if(empty($multimedia)){
+                \Yii::$app->session->setFlash('error', 'No se puede Descargar el Archivo.');
+                return Yii::$app->response->redirect($urlprev);    
+            }
+
+            /* Tomar el path desde configuracion cuando este hecho */
+            $file = Yii::getAlias('@files') . '/' . $multimedia->id;
+
+            if (file_exists($file)) {
+                // Iniciar descarga
+            
+                header("Pragma: public"); // required
+                header("Expires: 0");
+                header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+                header("Cache-Control: private", false); // required for certain browsers
+                //header('Content-Type: application/pdf');
+                header("Content-Length: " . filesize($file));
+                header("Content-Transfer-Encoding: binary");
+                header('Content-Disposition: attachment; filename="' . $multimedia->nombre_archivo . '"');
+                @readfile($file);
+                \Yii::$app->end();
+            } else {
+                \Yii::$app->session->setFlash('error', 'No existe el archivo fisicamente.');
+                return Yii::$app->response->redirect($urlprev); 
+                \Yii::$app->end();
+            }
+            
+            
+        } catch (\yii\base\Exception $e) {
+            \Yii::$app->getModule('audit')->data('catchedexc-ErrorDescargarAduntos', \yii\helpers\VarDumper::dumpAsString($e));
+            \Yii::$app->session->setFlash('error', 'No se puede Descargar el Archivo.');
+            return Yii::$app->response->redirect($urlprev);
+            
+        }
+    } 
 }
