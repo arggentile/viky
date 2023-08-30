@@ -20,11 +20,7 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-//        'user' => [
-//            'identityClass' => 'app\models\User',
-//            'enableAutoLogin' => true,
-//        ],
-       
+
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
@@ -46,6 +42,18 @@ $config = [
                 ],
             ],
         ],
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages', // if advanced application, set @frontend/messages
+                    'sourceLanguage' => 'es',
+                    'fileMap' => [
+                        'security/login' => '/user/login'
+                    ],
+                ],
+            ],
+        ],
         'db' => $db,
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -54,11 +62,37 @@ $config = [
                 '/' => 'site/index'
             ],
         ],
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@Da/User/resources/views' => '@app/views/user'
+                ]
+            ]
+        ],
+    ],
+     'controllerMap' => [
+        'security' => [
+            'class' => 'app\controllers\user\SecurityController',
+        ]
     ],
     'params' => $params,
     'modules' => [
         'user' => [
-            'class' => 'dektrium\user\Module',
+            'class' => Da\User\Module::class,
+            'enableEmailConfirmation' => false,
+            'allowUnconfirmedEmailLogin' => true,
+            'allowPasswordRecovery' => true,
+            'allowAdminPasswordRecovery' => true,
+            'administrators' => ['admin'],
+            'administratorPermissionName' => 'user-management',
+            'classMap' => [
+                 'LoginForm' => 'app\models\forms\LoginForm',
+            ],
+            'controllerMap' => [
+                'security' => 'app\controllers\user\SecurityController',
+            //    'recovery' => 'frontend\controllers\user\RecoveryController',
+            //    'registration' => 'frontend\controllers\user\RegistrationController'
+            ],
         ],
     ],
 ];

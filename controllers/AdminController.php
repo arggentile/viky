@@ -41,7 +41,6 @@ class AdminController extends Controller
             $searchModel = new \app\models\search\BeneficiosSearch();            
             $searchModel->load(Yii::$app->request->get());            
           
-          
             $dataProvider = new ActiveDataProvider([
                 'query' => $query,
                 'sort' => [

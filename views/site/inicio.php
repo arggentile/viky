@@ -3,8 +3,10 @@
 $this->title = 'Inicio';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<h3 class="text-center mt-5 mb-5"> 
+    <span class="text-overpassbold text-blue-site">   Una Mutual.</span> Muchos Beneficios  </h3>
 
-<div class="w100 carousel-column">
+<div class="carousel-column">
     <div id="carouselExampleIndicators-home" class="carouselExampleIndicators carousel slide" data-ride="carousel">
          <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'home' . DIRECTORY_SEPARATOR; ?>
         <div class="carousel-inner">

@@ -54,57 +54,6 @@ class SiteController extends Controller
         ];
     }
     
-     /*******************************************************/
-    /**
-     * Login action.
-     *
-     * @return Response|string
-     */
-    public function actionHola()
-    {
-        
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-
-        $model->password = '';
-        
-        return $this->render('hola', [
-            'model' => $model,
-        ]);
-    }
-    
-    /*******************************************************/
-    /**
-     * Login action.
-     *
-     * @return Response|string
-     */
-    public function actionLogin()
-    {
-        
-        $this->layout = 'main-login';
-        
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-
-        $model->password = '';
-        
-        return $this->render('login', [
-            'model' => $model,
-        ]);
-    }
     
     /*******************************************************/
     /**
@@ -133,6 +82,13 @@ class SiteController extends Controller
         $this->layout = 'main-inicio';
         return $this->render('inicio');
     }
+    
+    
+    
+    
+    
+    
+    
     
     
     /**
@@ -180,9 +136,7 @@ class SiteController extends Controller
     {
         try{
             $modelbeneficios = \app\models\Beneficios::find()->all();
-        } catch (\yii\base\Exception $e) {
-            if($transaction->isActive)$transaction->rollBack();            
-            
+        } catch (\yii\base\Exception $e) {         
             var_dump($e->getMessage());  exit;
             \Yii::$app->getSession()->setFlash('error', 'Excepcion. ' . $e->getMessage());
             \Yii::$app->getModule('audit')->data('catchedexc', \yii\helpers\VarDumper::dumpAsString($e));
@@ -210,6 +164,24 @@ class SiteController extends Controller
     {
         
         return $this->render('asociate');
+    }
+    
+    
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionOtros()
+    {
+        try{
+            $modelbeneficios = \app\models\Beneficios::find()->all();
+        } catch (\yii\base\Exception $e) {         
+            var_dump($e->getMessage());  exit;
+            \Yii::$app->getSession()->setFlash('error', 'Excepcion. ' . $e->getMessage());
+            \Yii::$app->getModule('audit')->data('catchedexc', \yii\helpers\VarDumper::dumpAsString($e));
+        }
+        return $this->render('beneficios', ['beneficios' => $modelbeneficios]);
     }
 
     

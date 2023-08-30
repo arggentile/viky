@@ -32,6 +32,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
         <!-- Contenido principal -->
         <div class="layout-home">
+            <p>asdasd sadsasdasd
             <?= $content; ?>
         </div>
 

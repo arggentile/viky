@@ -1,7 +1,6 @@
 <?php
 
 /** @var yii\web\View $this */
-
 use yii\helpers\Html;
 
 $this->title = 'El Condor';
@@ -50,7 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 A 3km del pueblo, se encuentra la Reserva Faunística Punta Bermeja, 
                 que a través de sus miradores permiten contemplar la mayor colonia de lobos marinos de un pelo de Sudamérica, 
                 toninas overas, orcas, delfines y, ocasionalmente ballenas francas.
-            <br />
+                <br />
                 En las inmediaciones del balneario, caminando apenas 1 km por la playa, se accede a un recinto bautizado por los
                 lugareños como El Anfiteatro, al cual ciertas teorías y testimonios adjudican a ese espacio una condición física especial,
                 relacionada con altas concentraciones de ozono que propician un gran bienestar energético y la manifestación de fenómenos paranormales.   
@@ -91,12 +90,12 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
     </div>
-    
+
     <div class="divider"></div>
 
     <div class="row p-descrip-page" >
         <!-- Columna con desplazamiento -->
-        
+
 
         <div class="col-lg-6 pr-lr-5 pr-md-5 carousel-column">
             <div id="carouselExampleIndicators3" class="carouselExampleIndicators carousel slide" data-ride="carousel">
@@ -136,7 +135,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </a>
             </div>
         </div>
-        
+
         <div class="col-lg-6 pl-lg-5 pl-md-5 scroll-column text-align-left">
             <span class="text-overpassbalck"> Nuestro Complejo: </span>
             <p> Está situado frente al mar, en Playa Central. A metros de los mejores locales gastronómicos del balneario y a 50 mts. del Casino.
@@ -146,36 +145,36 @@ $this->params['breadcrumbs'][] = $this->title;
                 Cuenta con 8 departamentos, todos con vista al mar, con las siguientes comodidades.<br />
                 4 departamentos de planta baja equipados para 6 personas:
             <ul class="list-right">
-                    <li>  3 dormitorios </li>
-                    <li>  cocina/comedor </li>
-                    <li>  1 baño </li>
-                    <li>  estacionamiento para vehículo propio </li>
-                    <li>  garage con fogón y parrilla </li>
-                    <li>  pequeño 	patio cerrado individual </li>
-                    <li>  televisor led con señal satelital </li>
-                </ul>             
-                <br />
-                4 departamentos en primer piso equipados para 6 personas:
-                <ul class="list-right">
-                    <li> 3 dormitorios </li>
-                    <li> cocina/comedor </li>
-                    <li> 1 baño </li>
-                    <li> estacionamiento para vehículo propio </li>
-                    <li> fogón y parrilla </li>
-                    <li> amplio balcón con vista al mar </li>
-                    <li> televisor led con señal satelital </li>
-                </ul>
-                 
+                <li>  3 dormitorios </li>
+                <li>  cocina/comedor </li>
+                <li>  1 baño </li>
+                <li>  estacionamiento para vehículo propio </li>
+                <li>  garage con fogón y parrilla </li>
+                <li>  pequeño 	patio cerrado individual </li>
+                <li>  televisor led con señal satelital </li>
+            </ul>             
+            <br />
+            4 departamentos en primer piso equipados para 6 personas:
+            <ul class="list-right">
+                <li> 3 dormitorios </li>
+                <li> cocina/comedor </li>
+                <li> 1 baño </li>
+                <li> estacionamiento para vehículo propio </li>
+                <li> fogón y parrilla </li>
+                <li> amplio balcón con vista al mar </li>
+                <li> televisor led con señal satelital </li>
+            </ul>
+
             </p>
         </div>
-        
+
     </div>
-    
+
     <div class="divider"></div>
 
     <div class="row p-descrip-page">
-       
-        
+
+
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column  text-align-right">
             <span class="text-overpassbalck"> Nuestro Camping </span>
@@ -189,12 +188,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 <li> duchas</li>
                 <li> zona de lavandería</li>
                 <li> estacionamiento para vehículos</li>
-                
+
             </ul>         
             </p>
         </div>
-        
-         <div class="col-lg-6 pr-lg-5 pr-md-5 carousel-column">
+
+        <div class="col-lg-6 pr-lg-5 pr-md-5 carousel-column">
             <div id="carouselExampleIndicators2" class="carouselExampleIndicators carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -218,41 +217,35 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        
-    </div>
-    
-    
-    <div class="col-sm-12 ">
-        <?php
-        $tetxoTooltip = "
 
-<div class='popup-elcondor  text-blue-site'>            
-<b>En avión</b>, hasta el aeropuerto de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
-<b>En colectivo</b>, desde todas las terminales nacionales, arribando a la terminal de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
-<b>En auto</b>, la distancia desde Buenos Aires es de 940 km.<br /><br />
-<b>En el tren Patagónico</b>, que atraviesa la provincia de Río negroy arriba en Viedma, luego en auto o colectivo hasta El Condor.
-<div class='d-flex'>
-    <div class='w-50 display-inlineblock'>
-        <span class=''><i class='fa-solid fa-location-dot fa-2xl'></i> camping </span>
     </div>
-    <div class='w-50 display-inlineblock text-align-right'>    
-        <span class=''><i class='fa-solid fa-location-dot fa-2xl'></i> complejo </span>
-    </div>
-</div>
-</div>
-    
-    ";
-        
-        ?>
-        <button type="button" class="btn text-overpassbold font3rem" data-toggle="popover" data-content="<?= $tetxoTooltip;?>"> <span class="float-left"> <i class="fa-solid fa-location-dot fa-2xl"></i></span><span>¿Cómo <br /> llego? </span></button>
-    </div>
+
+
 
 
 
 
 </div>
-  
-  
+<div class="container-fluid">
+    <div class="row comollego pt-4 pb-4 pr-5 pl-5">
+        <div class="col-lg-10 comollego">
+            <div class="pl-4 pr-4">
+                <ul class="list-unstyled">
+                    <li style='font-size: 2rem'> <button type="button" class="btn text-overpassbold font3rem comollego">  <i class="fa-solid fa-location-dot fa-2xl pr-3"></i><span>  ¿Cómo <br /> llego? </span></button> </li>
+                    <br />
+                    <li> <button type="button" class="btn text-overpassbold font2rem comollego">  <i class="fa-solid fa-location-dot pr-2"></i><span>   complejo </span></button></li>
+                    <li> <button type="button" class="btn text-overpassbold font2rem comollego"> <i class="fa-solid fa-location-dot pr-2"></i><span>   camping </span></button> </li>
+                </ul>
+            </div>
+       
+            <div class='pl-4 font2rem' style='border-left: 2px solid #fff;'>            
+                <b>En avión</b>, hasta el aeropuerto de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
+                <b>En colectivo</b>, desde todas las terminales nacionales, arribando a la terminal de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
+                <b>En auto</b>, la distancia desde Buenos Aires es de 940 km.<br /><br />
+                <b>En el tren Patagónico</b>, que atraviesa la provincia de Río negroy arriba en Viedma, luego en auto o colectivo hasta El Condor.</div>
+        </div>
+    </div>
+</div>
 <!-- Modal para ampliar imágenes -->
 <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

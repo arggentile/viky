@@ -44,7 +44,7 @@ class SecurityController extends BaseController {
         ];
     }
 
-    
+
     
      /**
      * Controller action responsible for handling login page and actions.
@@ -55,6 +55,9 @@ class SecurityController extends BaseController {
      */
     public function actionLogin()
     {
+        
+        $this->layout = '@app/views/layouts/main-login.php';
+        
         if (!Yii::$app->user->getIsGuest()) {
             return $this->goHome();
         }
@@ -96,7 +99,7 @@ class SecurityController extends BaseController {
                 $this->trigger(\Da\User\Event\FormEvent::EVENT_FAILED_LOGIN, $event);    
             }
         }
-
+ 
         return $this->render(
             'login',
             [
@@ -106,19 +109,4 @@ class SecurityController extends BaseController {
         );
     }
     
-    public function actionChangeOrg(){
-       try {   
-            $nuevoOrganismo = Yii::$app->request->get('org');
-            Yii::$app->session->set('orgs-user', $nuevoOrganismo);
-            \Yii::$app->session->setFlash('success', 'Cambio de Organismo éxitoso!.');
-            $urlprev = Yii::$app->request->referrer;
-            return Yii::$app->response->redirect($urlprev); 
-            \Yii::$app->end();
-        } catch (\yii\base\Exception $e) {
-            \Yii::$app->getModule('audit')->data('catchedexc-ErrorDescargarAduntos', \yii\helpers\VarDumper::dumpAsString($e));
-            \Yii::$app->session->setFlash('error', 'No se puede Descargar el Archivo.');
-            return Yii::$app->response->redirect($urlprev);
-            \Yii::$app->end();
-        }
-    }
 }

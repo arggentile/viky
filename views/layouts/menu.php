@@ -67,18 +67,28 @@
                 </div>
             </li>
 
-        <?php
+            <?php
             $activemenu = ($this->context->route == 'site/asociate' ) ? 'active' : '';
             ?>
             <li class="nav-item <?= $activemenu; ?>">
                 <a class="nav-link <?= $activemenu; ?>" href="<?= yii\helpers\Url::to(['/site/asociate']); ?>">Asociate</a>
             </li>
 
-        
-
+            <?php
+            $activemenu = ($this->context->route == 'site/otros' ) ? 'active' : '';
+            if(!Yii::$app->user->getIsGuest()){?>
+            <li class="nav-item <?= $activemenu; ?>">
+                <a class="nav-link <?= $activemenu; ?>" href="<?= yii\helpers\Url::to(['/site/otros']); ?>">Otros</a>
+            </li>
+            <?php } ?>
         </ul>
-
-        <a href="<?= yii\helpers\Url::to(['/site/login']); ?>" class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn-inicio-session">Iniciar Sesion</a>
-
+        <?php
+        if(Yii::$app->user->getIsGuest()){?>
+                <a href="<?= yii\helpers\Url::to(['/user/security/login']); ?>" class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn-inicio-session">Iniciar Sesion</a>
+        <?php }else   {?>
+                <a href="<?= yii\helpers\Url::to(['/user/security/logout']); ?>" class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn-inicio-session">Cerrar Sesion ( <?= Yii::$app->user->identity->username ;?>)</a>
+        <?php } ?>
+           
+          
     </div>
 </nav>
