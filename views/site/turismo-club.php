@@ -13,11 +13,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
 </div>
 <div class="container-site">
-    <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Club Peumayen  </h3>
+    <h3 class="text-center mt-5 mb-5"> <span class="overpassblack text-blue-site">  Club Peumayen </span>  </h3>
     <div class="row p-descrip-page mt-3">
        
-        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column text-overpassthin text-align-right">       
-            <span class="text-overpassbalck"> El Club </span>
+        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column overpassthin text-left">       
+            <span class="overpassbold"> El Club </span>
              <p> 
                 En la ciudad de Viedma, sobre la Ruta Provincial N°1, a solo 8 km. 
                 contamos con un predio frente al río, totalmente parquizado, con un salón para 150 personas, 
@@ -25,13 +25,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
             </p>
             <br />
-            <span class="text-overpassbalck"> Contacto </span>
+            <span class="overpassbold"> Contacto </span>
             <ul class="list-unstyled list-page-roww">
                 <li> <i class="fa fa-map-marker"></i> Falta Contenido </li>
                 <li> <i class="fa fa-mobile-phone"></i>   Falta Contenido </li>
                 <li> <i class="fa-brands fa-mail-bulk"></i> Falta Contenido </li>               
             </ul>
-            <span class="text-overpassbalck"> Nuestras Redes </span>
+            <span class="overpassbold"> Nuestras Redes </span>
             <ul class="list-unstyled list-page-roww">
                 <li> <i class="fa-brands fa-facebook fa-2x"></i>
                 <i class="fa-brands fa-instagram  fa-2x"></i></li>

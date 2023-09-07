@@ -81,7 +81,11 @@ class BeneficiosController extends Controller
 
             if ($this->request->isPost && $model->load($this->request->post())) {
                 $model->file = \yii\web\UploadedFile::getInstance($model, 'file'); 
+                $model->fileimagen = \yii\web\UploadedFile::getInstance($model, 'fileimagen'); 
+                
                 $file = $model->file;
+                $fileimagen = $model->fileimagen;
+                
                 $multimedia = new \app\models\Multimedia();
                 $multimedia->tipo_archivo = $file->extension;
                 $multimedia->nombre_archivo = $file->baseName . '.' . $file->extension;
@@ -89,13 +93,27 @@ class BeneficiosController extends Controller
                 if(!$multimedia->save())
                     throw new \yii\web\HttpException(400, "No se pudo grabar la multimedia.");
                 
-                
                 $model->id_multimedia = $multimedia->id;
+                
+                $multimediaImagen = new \app\models\Multimedia();
+                $multimediaImagen->tipo_archivo = $fileimagen->extension;
+                $multimediaImagen->nombre_archivo = $fileimagen->baseName . '.' . $fileimagen->extension;
+                $multimediaImagen->comentario = "";
+                if(!$multimediaImagen->save())
+                    throw new \yii\web\HttpException(400, "No se pudo grabar la multimedia.");
+                
+                $model->imagen = $multimedia->id;
                         
                 if($model->save()){
                     if(!$model->file->saveAs(\Yii::getAlias('@files') . DIRECTORY_SEPARATOR . $multimedia->id)){
                         throw new \yii\web\HttpException(400, "Error al grabar los adjunto en disco.");
                     }
+                    $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'losbeneficios' . DIRECTORY_SEPARATOR;
+
+                    if(!$model->fileimagen->saveAs($directorioImagenes . $multimediaImagen->id . $fileimagen->extension )){
+                        throw new \yii\web\HttpException(400, "Error al grabar los adjunto en disco.");
+                    }
+                    
                     $transaction->commit();
                 }
                 

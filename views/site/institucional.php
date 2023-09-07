@@ -11,7 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column p-descrip-page mb-md-5">
-            <h1 class="text-blue-site text-overpassbalck 3rem text-uppercase text-mar-prin"> 
+            <h1 class="text-blue-site overpassbalck 3rem text-uppercase text-mar-prin"> 
                Una mutual para todos. <br /> Desde siempre 
             </h1>
 
@@ -40,11 +40,11 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <div class="col-lg-6 carousel-column pl-lg-5 mt-md-5">
-            <div id="carouselExampleIndicators-institucional" class="carouselExampleIndicators carousel slide" data-ride="carousel">
+            <div id="carouselInstitucional" class="carouselInstitucional carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators-institucional" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators-institucional" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators-institucional" data-slide-to="2"></li>
+                    <li data-target="#carouselInstitucional" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselInstitucional" data-slide-to="1"></li>
+                    <li data-target="#carouselInstitucional" data-slide-to="2"></li>
                 </ol>
                 <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'institucional' . DIRECTORY_SEPARATOR; ?>
                 <div class="carousel-inner">
@@ -55,11 +55,11 @@ $this->params['breadcrumbs'][] = $this->title;
                         <img class="d-block w-100" src="<?= $directorioImagenes . 'institucional02.jpg'; ?>" alt="Institucional" data-toggle="modal" data-target="#imageModal">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators-institucional" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselInstitucional" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators-institucional" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselInstitucional" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Siguiente</span>
                 </a>

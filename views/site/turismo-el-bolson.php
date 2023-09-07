@@ -8,8 +8,8 @@ $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="cabecera-turismo cabecera-turismo-elcondor">
-    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
-    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'bolson' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="El Bolson"> 
 </div>
 <div class="container-site">
 <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  El Bolson </h3>
@@ -17,8 +17,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row p-descrip-page mt-3">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column text-overpassthin text-align-right">  
-            <span class="text-overpassbalck"> El Bolson </span>
+        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column overpassthin text-right">  
+            <span class="overpassbalck"> El Bolson </span>
             <p> 
                 El Bolsón se encuentra en el departamento Bariloche, al sudoeste de la provincia de Río Negro y a 18 Km.
                 del Parque Nacional Lago Puelo en la Provincia de Chubut. Favorecido por un microclima apacible, este pueblo de
@@ -93,8 +93,8 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 pl-lg-5 pl-md-5 scroll-column text-overpassthin text-align-left">
-            <span class="text-overpassbalck"> Nuestro Complejo </span>
+        <div class="col-lg-6 pl-lg-5 pl-md-5 scroll-column overpassthin text-left">
+            <span class="overpassbalck"> Nuestro Complejo </span>
             <p > 
                 Se sitúa al pie del cerro Piltriquitrón, contamos con un predio totalmente parquizado de más de 10.000mts2, de fácil acceso, garantizando tranquilidad para tu familia.
             </p>

@@ -8,17 +8,17 @@ $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="cabecera-turismo cabecera-turismo-elcondor">
-    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
-    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'grutas' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Las Grutas"> 
 </div>
 <div class="container-site">
-<h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Las Grutas </h3>
+<h3 class="text-center mt-5 mb-5"> <span class="overpassbold text-blue-site">  Las Grutas </h3>
 
 
     <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-align-right ">
-            <span class="text-overpassbalck"> Las Grutas </span>
+        <div class="col-lg-6 scroll-column text-right ">
+            <span class="overpassbalck"> Las Grutas </span>
             <p class=""> 
                 Las Grutas es una villa balnearia argentina ubicada en la provincia de Río Negro en el noreste de la 
                 Patagonia argentina. Se encuentra dentro del ejido municipal de la ciudad de San Antonio Oeste.<br />
@@ -114,8 +114,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 scroll-column text-align-left">
-            <span class="text-overpassbalck"> Nuestro Complejo</span>
+        <div class="col-lg-6 scroll-column text-left">
+            <span class="overpassbalck"> Nuestro Complejo</span>
             <p class=""> 
                 Está situado en pleno centro peatonal del balneario, a metros de las mejores ofertas gastronómicas, 
                 teatro, centro de compras, y a solo 100mts del mar.<br />

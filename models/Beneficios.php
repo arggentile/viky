@@ -12,11 +12,13 @@ use Yii;
  * @property string|null $descripcion
  * @property int|null $activo
  * @property int|null $id_multimedia
+ * @property int|null $imagen
  */
 class Beneficios extends \yii\db\ActiveRecord
 {
     
     public $file;
+    public $fileimagen;
     
     /**
      * {@inheritdoc}
@@ -32,9 +34,10 @@ class Beneficios extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['activo', 'id_multimedia'], 'integer'],
+            [['activo', 'id_multimedia', 'imagen'], 'integer'],
             [['nombre', 'descripcion'], 'string', 'max' => 255],
-            [['file'], 'file', 'checkExtensionByMimeType'=>false, 'maxFiles' => 1],
+             [['file'], 'file', 'checkExtensionByMimeType'=>false, 'maxFiles' => 1],
+            [['imagen'], 'file', 'checkExtensionByMimeType'=>false, 'maxFiles' => 1],
         ];
     }
 
@@ -49,6 +52,27 @@ class Beneficios extends \yii\db\ActiveRecord
             'descripcion' => 'Descripcion',
             'activo' => 'Activo',
             'id_multimedia' => 'Id Multimedia',
+            'imagen' => 'Imagen',
         ];
     }
+    
+    
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getArchivo()
+    {
+        return $this->hasOne(\app\models\Multimedia::class, ['id' => 'id_multimedia']);
+    }
+
+    
+    
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getArchivoImagen()
+    {
+        return $this->hasOne(\app\models\Multimedia::class, ['id' => 'imagen']);
+    }
+
 }

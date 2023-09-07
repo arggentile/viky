@@ -8,15 +8,15 @@ $this->title = 'Beneficios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="cabecera-turismo cabecera-turismo-elcondor">
-    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
-    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'bariloche' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Bariloche"> 
 </div>
 <div class="container-site">
 <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Bariloche </h3>
     <div class="row p-descrip-page">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 pr-lg-5 pr-md-5  scroll-column text-align-right text-overpassthin">
-            <span class="text-overpassbalck"> Bariloche </span>
+        <div class="col-lg-6 pr-lg-5 pr-md-5  scroll-column text-right overpassthin">
+            <span class="overpassbalck"> Bariloche </span>
             <p> 
                 Bariloche es una ciudad ubicada entre bosques milenarios, montañas cubiertas de nieve 
                 y lagos cristalinos, en la provincia de Río Negro, Argentina. Se trata de una postal de nuestra Patagonia.
@@ -102,8 +102,8 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 pl-lg-5 pl-md-5  scroll-column text-align-left text-overpassthin">
-            <span class="text-overpassbalck"> Nuestro Complejo </span>
+        <div class="col-lg-6 pl-lg-5 pl-md-5  scroll-column text-left overpassthin">
+            <span class="overpassbalck"> Nuestro Complejo </span>
             <p> 
                 Está ubicado en Calle Foyel 5243, a la altura del kilómetro 5 de la Avenida E. Bustillo, a 200mts
                 del lago Nahuel Huapi y de las mejores ofertas gastronómicas de la ciudad. A su vez, se encuentra 

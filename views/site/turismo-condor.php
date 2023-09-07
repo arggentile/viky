@@ -12,11 +12,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
 </div>
 <div class="container-site">
-    <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Camping y complejo. </span> El Condor </h3>
+    <h3 class="text-center mt-5 mb-5"> <span class="overpassblack text-blue-site">  Camping y complejo. </span> El Condor </h3>
     <div class="row p-descrip-page mt-3">
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column  text-align-right">            
-            <span class="text-overpassbalck"> El Condor </span>
+        <div class="col-lg-6 pr-lg-5 pr-md-5  scroll-column  text-left mb-sm-3 ">            
+            <span class="overpassbold"> El Condor </span>
             <p>
                 Esta Villa Balnearia es el principal centro de servicios del Camino de la Costa, 
                 donde se accede por la Ruta Provincial N°1 (asfaltada), 
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 altos acantilados y por ser el epicentro de los deportes de viento, 
                 tales como Kitesurf, Windsurf, Carrovelismo, kitebuggy, entre otros.
             </p>
-            <span class="text-overpassbalck"> Sus Playas </span>
+            <span class="overpassbold"> Sus Playas </span>
             <p>
                 Sobre el Camino de La Costa, podes disfrutar de una variedad de Playas donde cada una tiene su encanto natural.
             </p>
@@ -136,8 +136,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <div class="col-lg-6 pl-lg-5 pl-md-5 scroll-column text-align-left">
-            <span class="text-overpassbalck"> Nuestro Complejo: </span>
+        <div class="col-lg-6 pl-lg-5 pl-md-5 scroll-column text-right">
+            <span class="overpassbold"> Nuestro Complejo: </span>
             <p> Está situado frente al mar, en Playa Central. A metros de los mejores locales gastronómicos del balneario y a 50 mts. del Casino.
 
             </p>
@@ -176,8 +176,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
         <!-- Columna con desplazamiento -->
-        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column  text-align-right">
-            <span class="text-overpassbalck"> Nuestro Camping </span>
+        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column  text-left">
+            <span class="overpassbold"> Nuestro Camping </span>
             <p> Está situado a 100mts del mar, en Playa Central. A metros de los mejores locales gastronómicos del balneario y a 100 mts. del Casino.
             </p>
             <p>
@@ -228,17 +228,18 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 <div class="container-fluid">
     <div class="row comollego pt-4 pb-4 pr-5 pl-5">
-        <div class="col-lg-10 comollego">
+        <div class="comollego-container">
             <div class="pl-4 pr-4">
                 <ul class="list-unstyled">
-                    <li style='font-size: 2rem'> <button type="button" class="btn text-overpassbold font3rem comollego">  <i class="fa-solid fa-location-dot fa-2xl pr-3"></i><span>  ¿Cómo <br /> llego? </span></button> </li>
+                    <li> <button type="button" class="display-4 btn overpassbold comollego">  
+                      <i class="fa-solid fa-location-dot fa-2xl pr-3"></i><span class="display-3">  ¿Cómo <br /> llego? </span></button> </li>
                     <br />
-                    <li> <button type="button" class="btn text-overpassbold font2rem comollego">  <i class="fa-solid fa-location-dot pr-2"></i><span>   complejo </span></button></li>
-                    <li> <button type="button" class="btn text-overpassbold font2rem comollego"> <i class="fa-solid fa-location-dot pr-2"></i><span>   camping </span></button> </li>
+                    <li> <button type="button" class="btn overpassbold comollego">  <i class="fa-solid fa-location-dot pr-5 h1"></i><span class="h1">   complejo </span></button></li>
+                    <li> <button type="button" class="btn overpassbold comollego"> <i class="fa-solid fa-location-dot pr-5  h1"></i><span class="h1">   camping </span></button> </li>
                 </ul>
             </div>
-       
-            <div class='pl-4 font2rem' style='border-left: 2px solid #fff;'>            
+
+            <div class='pl-4 comollego-description'>            
                 <b>En avión</b>, hasta el aeropuerto de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
                 <b>En colectivo</b>, desde todas las terminales nacionales, arribando a la terminal de Viedma, luego en auto o colectivo hasta El Condor.<br /><br />
                 <b>En auto</b>, la distancia desde Buenos Aires es de 940 km.<br /><br />

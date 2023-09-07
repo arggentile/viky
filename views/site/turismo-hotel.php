@@ -9,15 +9,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 <div class="cabecera-turismo cabecera-turismo-elcondor">
-    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR . 'condor' . DIRECTORY_SEPARATOR; ?>
-    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabecera.jpg'; ?>" alt="Balneario El Condor"> 
+    <?php $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'turismo' . DIRECTORY_SEPARATOR; ?>
+    <img class="d-block w-100" src="<?= $directorioImagenes . 'cabeceraviedma.jpg'; ?>" alt="Viedma"> 
 </div>
 <div class="container-site">
-    <h3 class="text-center mt-5 mb-5"> <span class="text-overpassbold text-blue-site">  Hotel Peumayen  </h3>
+    <h3 class="text-center mt-5 mb-5"> <span class="overpassblack text-blue-site">  Hotel Peumayen </span> </h3>
     <div class="row p-descrip-page mt-3">
 
-        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column text-overpassthin text-align-right">       
-            <span class="text-overpassbalck"> Nuestro Hotel </span>
+        <div class="col-lg-6 pr-lg-5 pr-md-5 scroll-column overpassthin text-left">       
+            <span class="overpassbold"> Nuestro Hotel </span>
             <p> 
                 Nuestro Hotel se encuentra en la ciudad de Viedma, en calle Buenos Aires 334, en pleno centro comercial de la ciudad.<br /><br />
                 Su excelente ubicación, lo sitúa a pocos metros de los atractivos turísticos de la ciudad, como así también de la mejor oferta gastronómica.<br /><br />
@@ -27,13 +27,13 @@ $this->params['breadcrumbs'][] = $this->title;
             <ul class="list-unstyled">
                 <li>  <a href="#" title="">  <i class="fas fa-file-pdf"> </i> Tarifas </a> </li>
             </ul>
-            <span class="text-overpassbalck"> Contacto </span>
+            <span class="overpassbold"> Contacto </span>
             <ul class="list-unstyled">
-                <li> <i class="fa fa-map-marker"></i> Buenos Aires 334, Viedma, Río Negro. C.P: 8500 </li>
+                <li> <a href="https://goo.gl/maps/oypfCyfgzmkkTVx59" target="_blank">  <i class="fa-solid fa-location-dot"></i> Buenos Aires 334, Viedma, Río Negro. C.P: 8500 </a>  </li>
                 <li> <i class="fa fa-phone"></i>   02920 425222 </li>
-                <li> <i class="fa-solid fa-envelope-open-text"></i> hotelpeumayen@rnonline.com.ar </li>
+                <li> <i class="fa-regular fa-envelope-open"></i> <a href="mailto:hotelpeumayen@rnonline.com.ar">hotelpeumayen@rnonline.com.ar</a> </li>
             </ul>
-            <span class="text-overpassbalck"> Nuestras Redes </span>
+            <span class="overpassbold"> Nuestras Redes </span>
              <ul class="list-unstyled list-page-roww">
             <li><i class="fa-brands fa-facebook fa-2x"></i>
                 <i class="fa-brands fa-instagram  fa-2x"></i></li>

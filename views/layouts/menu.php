@@ -24,24 +24,18 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item " href="<?= yii\helpers\Url::to(['/site/institucional']); ?>">Institucional</a>
                     <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/autoridades']); ?>">Autoridades</a>
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/afiliados']); ?>">Afiliados</a>
                 </div>
             </li>
 
             <?php
-            $activemenu = ($this->context->route == 'site/farmacia' ||
-                    $this->context->route == 'site/beneficios' ) ? 'active' : '';
+            $activemenu = ($this->context->route == 'site/farmacia') ? 'active' : '';
             ?>
-
-            <li class="nav-item dropdown">
-                <a href="<?= yii\helpers\Url::to(['/site/beneficios']);?>" class="btn <?= $activemenu; ?>">beneficios</a>
-                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/farmacia']); ?>">Farmacia</a>
-                </div>
+            <li class="nav-item <?= $activemenu; ?>">
+                <a class="nav-link <?= $activemenu; ?>" href="<?= yii\helpers\Url::to(['/site/farmacia']); ?>">Farmacia</a>
             </li>
+            
+
+           
             <li class="nav-item dropdown">
                   <?php
             $activemenu = ($this->context->route == 'site/turismo-principal' ||
@@ -54,7 +48,7 @@
             ?>
                 
                 <a href="<?= yii\helpers\Url::to(['/site/turismo-principal']);?>" class="btn <?= $activemenu; ?>">Turismo</a>
-                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -78,10 +72,31 @@
             $activemenu = ($this->context->route == 'site/otros' ) ? 'active' : '';
             if(!Yii::$app->user->getIsGuest()){?>
             <li class="nav-item <?= $activemenu; ?>">
-                <a class="nav-link <?= $activemenu; ?>" href="<?= yii\helpers\Url::to(['/site/otros']); ?>">Otros</a>
+                <a class="nav-link <?= $activemenu; ?>" href="<?= yii\helpers\Url::to(['/site/otros']); ?>">Beneficios</a>
             </li>
             <?php } ?>
+            
+            <?php
+            $activemenu = ($this->context->route == 'beneficios/index' ||
+                    $this->context->route == 'user/adin/index') ? 'active' : '';
+            
+            if(!Yii::$app->user->getIsGuest() && Yii::$app->user->can('admin')){
+            ?>
+            
+            <li class="nav-item dropdown">
+                <a href="<?= yii\helpers\Url::to(['/site/turismo-principal']);?>" class="btn <?= $activemenu; ?>">admin</a>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/beneficios/index']); ?>">Beneficios</a>
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/user/admin/index']); ?>">Usuarios</a>
+                </div>
+            </li>
+            <?php } ?>
+            
         </ul>
+        <div class="dropdown-divider"></div>
         <?php
         if(Yii::$app->user->getIsGuest()){?>
                 <a href="<?= yii\helpers\Url::to(['/user/security/login']); ?>" class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn-inicio-session">Iniciar Sesion</a>

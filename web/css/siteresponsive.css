@@ -1,0 +1,150 @@
+
+@media (min-width: 1200px){
+.container-imagengalery {
+    max-width: 1300px;
+}
+}
+
+
+@media (max-width: 992px) { 
+footer {
+    background-image: none;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: rgb(0,193,207); 
+    z-index: 1000;
+    color: #fff;
+}
+footer a{ color: #fff;}
+.title-home{
+    font-size: 1.5rem;
+}
+.carousel-caption-title-home{
+    font-size: 1.8rem;
+}
+.carousel-caption-description-home{
+    font-size: 1.2rem;
+}
+}
+
+
+@media (min-width: 992px) { 
+    .dropdown-toggle-split{
+        display:  none;
+    }
+}
+
+
+@media (max-width: 576px){
+    
+.layout-site {
+    padding-bottom: 10px;
+    padding-top: 109px;
+}
+.layout-home {
+    padding-bottom: 10px;
+    margin-top: 1rem;
+}
+
+.container-site {
+    /*max-width: 1600px;*/
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer {
+    background-image: none;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: #2B3372;
+    z-index: 1000;
+    color: #fff;
+}
+footer a{ color: #fff;}
+.image-gallery-autoridades > li {
+  flex-basis: 100%   ; 
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.colfooterright {
+    text-align: left;
+}
+
+.p-descrip-page{
+    font-size: 1rem;
+}
+
+.title-home{
+    font-size: 1.5rem;
+}
+.carousel-caption-title-home{
+    font-size: 1.2rem;
+}
+.carousel-caption-description-home{
+    font-size: 1rem;
+}
+.carousel-caption-home {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    transform: none;
+    left: 2%;
+    z-index: 10;  
+    color: #fff;
+    text-align: left;
+}
+
+.btn-asociate-home {   
+    font-size: 1.1rem;
+}
+.title-home{
+    font-size: 1.2rem;
+}
+
+}
+
+
+
+/*
+.btn-asociate-home{
+    text-transform: uppercase;
+    background-color: #2B454E;
+    color: #fff;
+    font-family: 'OverpassBold';
+    font-weight: bold;
+    font-size: 1.2em;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-color: #2B454E;    
+    padding: 5px 15px;
+    font-size: 1.5rem;
+}
+
+
+
+.btn-asociate-principal
+{
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    text-transform: uppercase;
+    background-color: #2B454E;
+    color: #fff;
+    font-family: 'OverpassBold';
+    font-weight: bold;
+    font-size: 1.2em;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-color: #2B454E;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+}
+*/
