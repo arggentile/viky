@@ -10,15 +10,15 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
-<div class="container-lg mt-4">
+<div class="container-lg mt-4" id="conatin-form-asociate">
     <div class="login-box">
         <div class="card card-asociate m-auto">
             <div class="card-body  ">
 
-                <?php $form = ActiveForm::begin(['id' => 'login-form', 'enableClientValidation' => true]); ?>
+                <?php $form = ActiveForm::begin(['id' => 'asociate-form', 'enableClientValidation' => true]); ?>
                 <form action="login.html" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nombre"name="FormAsociate[nombre]">
+                        <input type="text" class="form-control" required placeholder="Nombre"name="FormAsociate[nombre]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fa-regular fa-user"></i>
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Apelllido"name="FormAsociate[apellido]">
+                        <input type="text" class="form-control" required placeholder="Apelllido"name="FormAsociate[apellido]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fa-regular fa-user"></i>
@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="D.N.I"name="FormAsociate[dni]">
+                        <input type="text" class="form-control" required placeholder="D.N.I"name="FormAsociate[dni]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fa-regular fa-address-card"></i>
@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Celular"name="FormAsociate[celular]">
+                        <input type="text" class="form-control" required placeholder="Celular"name="FormAsociate[celular]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fa-solid fa-phone"></i>
@@ -50,7 +50,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email"name="FormAsociate[email]">
+                        <input type="text" class="form-control" required  placeholder="Email"name="FormAsociate[email]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fa-regular fa-envelope"></i>
@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Domicilio"name="FormAsociate[domicilio]">
+                        <input type="text" class="form-control" required placeholder="Domicilio"name="FormAsociate[domicilio]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fa-solid fa-house"></i>
@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Localidad"name="FormAsociate[localidad]">
+                        <input type="text" class="form-control" required placeholder="Localidad"name="FormAsociate[localidad]">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fa-regular fa-compass"></i>
@@ -76,15 +76,15 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" placeholder="Ficha Autorizacion"name="FormAsociate[fichaadhesion]">
+                        <input type="file" name="files[]" class="form-control" required placeholder="Ficha Autorizacion"name="FormAsociate[fichaadhesion]">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" placeholder="Localidad"name="FormAsociate[fichaautorizacion]">
+                        <input type="file" name="files[]" class="form-control" required placeholder="Localidad"name="FormAsociate[fichaautorizacion]">
                     </div>
                     
                     <div class="row">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block btn-flat background-bluesite text-uppercase overpassbold">ASOCIATE</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-flat background-bluesite text-uppercase overpassbold formpreventsubmit">ASOCIATE</button>
                         </div>
                     </div>
                     
@@ -101,4 +101,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
         </div>
     </div>  
+</div>
+
+<div class="alert alert-primary" role="alert" id="alert-exito-asociate">
+  Formulario enviado con éxito! 
 </div>

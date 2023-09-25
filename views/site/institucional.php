@@ -11,7 +11,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
         <!-- Columna con desplazamiento -->
         <div class="col-lg-6 scroll-column p-descrip-page mb-md-5">
-            <h1 class="text-blue-site overpassbalck 3rem text-uppercase text-mar-prin"> 
+            <h1 class="text-blue-site overpassblack 3rem text-uppercase text-mar-prin"> 
                Una mutual para todos. <br /> Desde siempre 
             </h1>
 

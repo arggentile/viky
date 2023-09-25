@@ -35,6 +35,8 @@ class Beneficios extends \yii\db\ActiveRecord
     {
         return [
             [['activo', 'id_multimedia', 'imagen'], 'integer'],
+            [['file', 'fileimagen'], 'required'],
+            
             [['nombre', 'descripcion'], 'string', 'max' => 255],
              [['file'], 'file', 'checkExtensionByMimeType'=>false, 'maxFiles' => 1],
             [['imagen'], 'file', 'checkExtensionByMimeType'=>false, 'maxFiles' => 1],

@@ -13,8 +13,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="<?= $directorioImagenes . 'inicioasociate.jpg'; ?>" alt="Asociate">
-                <div class="col-lg-8 col-md-12 col-xs-12 carousel-caption   carousel-caption-home">
-                    <span class="text-blue-site overpassbalck  text-justify text-uppercase carousel-caption-title-home">Asociación mutual <br /> personal del banco de <br />la provincia de Río Negro</span>
+                <div class="col-lg-4 col-md-12 col-xs-12 carousel-caption   carousel-caption-home">
+                    <span class="text-blue-site overpassblack  text-justify text-uppercase carousel-caption-title-home">Asociación mutual <br /> personal del banco de <br />la provincia de Río Negro</span>
                     <p class="carousel-caption-description-home text-blue-site">¿Queres contar con gran cantidad <br />
                                               de beneficios y descuentos?</p>
                    <a href="<?= \yii\helpers\Url::to(['/site/asociate']); ?>" class="btn btn-asociate-home"> asociate </a>
@@ -22,8 +22,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="<?= $directorioImagenes . 'inicioturismo.jpg'; ?>" alt="Turismo">
-                <div class="col-lg-8 col-md-12 col-xs-12 carousel-caption  carousel-caption-home">
-                    <span class="text-blue-site overpassbalck  text-justify  text-uppercase carousel-caption-title-home">Complejos <br /> en diferentes <br /> puntos turísticos</span>
+                <div class="col-lg-4 col-md-12 col-xs-12 carousel-caption  carousel-caption-home">
+                    <span class="text-blue-site overpassblack  text-justify  text-uppercase carousel-caption-title-home">Complejos <br /> en diferentes <br /> puntos turísticos</span>
                     <p class="text-blue-site carousel-caption-description-home">
                         Sabias que podes consultar disponibilidades de fechas y realizar el pago de tu estadía sin moverte de tu casa? <br />
                         Contactate con nostros por Whatsappmos
@@ -32,8 +32,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="<?= $directorioImagenes . 'iniciobeneficios.jpg'; ?>" alt="Beneficios">
-                <div class="col-lg-8 col-md-12 col-xs-12 carousel-caption   carousel-caption-home">
-                    <span class="text-blue-site overpassbalck  text-justify  text-uppercase carousel-caption-title-home">Descuentos <br /> en farmacia <br /> y perfumeria</span>
+                <div class="col-lg-4 col-md-12 col-xs-12 carousel-caption   carousel-caption-home">
+                    <span class="text-blue-site overpassblack  text-justify  text-uppercase carousel-caption-title-home">Descuentos <br /> en farmacia <br /> y perfumeria</span>
                 </div>
             </div>
 

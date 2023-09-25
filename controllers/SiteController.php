@@ -162,10 +162,69 @@ class SiteController extends Controller
      */
     public function actionAsociate()
     {
+        try{
+            if ( Yii::$app->request->isPost ) {
+
+                $params = Yii::$app->params;
+                $data = Yii::$app->request->post();
+
+                $files = \yii\web\UploadedFile::getInstancesByName('files');
+
+                $envio =  $this->crearEmail('arg.gentile@gmail.com', 'Formulario Asociate', 'asociate', $data, $files,  $params);
+
+                \Yii::$app->response->format = 'json';
+
+                if($envio){
+                    $response = array(
+                        'code' => 200,
+                        'success' => true,
+                        'message' => 'ok',
+                    );
+                    return $response;                
+                }else{
+                    $response = array(
+                        'code' => 200,
+                        'success' => false,
+                        'message' => 'error',
+                    );
+                    return $response;
+                }
+            }
+        }catch (Exception $e) {
+            var_dump(\yii\helpers\VarDumper::dumpAsString($e)); exit;
+            // \Yii::error('Error grave de exception');
+            //return false;
+        }     
         
         return $this->render('asociate');
     }
     
+    
+    private function crearEmail($address, $subject, $view, $data, $files = [], $params, $cc = [], $ccd = [] , $adjuntos = []){
+        try{
+        $mailer = \Yii::$app->mailer->compose($view, array_merge($params, $data))             
+                        ->setFrom('info@planarg.website')
+                        ->setTo($address)
+                        ->setSubject($subject);
+        
+        if(!empty($files) || count($files)>0){
+            foreach($files as $_adjunto){
+                $mailer->attach($_adjunto->tempName, ['fileName' => $_adjunto->name]);
+            }
+        }
+       
+        if(!$mailer->send()){        
+            throw new Exception('Error enviando el archivo');
+        }
+            
+        return true;
+        }catch (Exception $e) {
+//            var_dump(\yii\helpers\VarDumper::dumpAsString($e)); exit;
+//            // \Yii::error('Error grave de exception');
+            return false;
+        }        
+    }
+
     
     /**
      * Displays about page.
@@ -183,11 +242,6 @@ class SiteController extends Controller
         }
         return $this->render('beneficios', ['beneficios' => $modelbeneficios]);
     }
-
-    
-    
-    
-    
     
 
     /**
@@ -202,34 +256,6 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    /**
-     * Displays contact page.
-     *
-     * @return Response|string
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
-  
     
 
     /**
@@ -237,81 +263,41 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionTurismoPrincipal()
+    public function actionTurismo()
     {
+        $get = Yii::$app->request->get();
+        $page = $get["page"];
         
-        return $this->render('turismo-principal');
+        switch($page){      
+            case 'prin':      
+                $view = 'principal';
+                break;
+            case 'grutas':      
+                $view = 'las-grutas';
+                break;
+            case 'hotel':      
+                $view = 'hotel';
+                break;
+            case 'bolson':      
+                $view = 'el-bolson';
+                break;
+            case 'condor':      
+                $view = 'condor';
+                break;
+            case 'club':      
+                $view = 'club';
+                break;
+            case 'bariloche':      
+                $view = 'bariloche';
+                break;
+            default:  
+                 $view = 'principal';
+                break;
+        }  
+        return $this->render('turismo/'.$view);
     }
     
     
-    
-     /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionTurismoCondor()
-    {
-        
-        return $this->render('turismo-condor');
-    }
-    
-    
-     /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionTurismoClub()
-    {
-        
-        return $this->render('turismo-club');
-    }
-    
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionTurismoHotel()
-    {
-        
-        return $this->render('turismo-hotel');
-    }
-    
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionTurismoBolson()
-    {
-        
-        return $this->render('turismo-el-bolson');
-    }
-    
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionTurismoBariloche()
-    {
-        
-        return $this->render('turismo-bariloche');
-    }
-    
-    
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionTurismoLasGrutas()
-    {
-        
-        return $this->render('turismo-las-grutas');
-    }
     
     public  function actionDownload() {
        try {   

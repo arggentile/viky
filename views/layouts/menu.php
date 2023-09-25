@@ -38,26 +38,20 @@
            
             <li class="nav-item dropdown">
                   <?php
-            $activemenu = ($this->context->route == 'site/turismo-principal' ||
-                    $this->context->route == 'site/turismo-club' ||
-                    $this->context->route == 'site/turismo-hotel' || 
-                    $this->context->route == 'site/turismo-condor' || 
-                    $this->context->route == 'site/turismo-las-grutas' || 
-                    $this->context->route == 'site/turismo-bolson' || 
-                    $this->context->route == 'site/turismo-bariloche' ) ? 'active' : '';
+            $activemenu = ($this->context->route == 'site/turismo') ? 'active' : '';
             ?>
                 
-                <a href="<?= yii\helpers\Url::to(['/site/turismo-principal']);?>" class="btn <?= $activemenu; ?>">Turismo</a>
+                <a href="<?= yii\helpers\Url::to(['/site/turismo','page'=>'prin']);?>" class="btn <?= $activemenu; ?>">Turismo</a>
                 <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-club']); ?>">Club</a>
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-hotel']); ?>">Hotel</a>
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-condor']); ?>">El Condor</a>
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-las-grutas']); ?>">Las Grutas</a>
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-bolson']); ?>">El Bolsón</a>
-                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo-bariloche']); ?>">Bariloche</a>
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo','page'=>'club']); ?>">Club</a>
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo','page'=>'hotel']); ?>">Hotel</a>
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo','page'=>'condor']); ?>">El Condor</a>
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo' ,'page'=>'grutas']); ?>">Las Grutas</a>
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo' ,'page'=>'bolson']); ?>">El Bolsón</a>
+                    <a class="dropdown-item" href="<?= yii\helpers\Url::to(['/site/turismo' ,'page'=>'bariloche']); ?>">Bariloche</a>
                 </div>
             </li>
 

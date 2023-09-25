@@ -4,14 +4,17 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'basic',
+    'id' => 'Asociación Mutual Personal del banco de la provincia de Río Negro',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'es-AR',
+    'charset' => 'UTF-8',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
         '@files' => '@app/_files',
     ],
+    
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -26,12 +29,6 @@ $config = [
         ],
         'assetManager' => [
             'forceCopy' => true
-        ],
-        'mailer' => [
-            'class' => \yii\symfonymailer\Mailer::class,
-            'viewPath' => '@app/mail',
-            // send all mails to a file by default.
-            'useFileTransport' => true,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -67,6 +64,30 @@ $config = [
                 'pathMap' => [
                     '@Da/User/resources/views' => '@app/views/user'
                 ]
+            ]
+        ],
+        'mailer' => [
+            'class' => \yii\symfonymailer\Mailer::class,
+            'useFileTransport' => false,
+           
+            'transport' => [          
+                'dsn' => $params['dnsmail'],
+                
+//                'scheme' => 'smtps',
+//                'host' => 'c2321679.ferozo.com',
+//                'username' => 'info@planarg.website',
+//                'password' => 'c/HiEsw7nK',
+//                'port' => 465,
+//                'dsn' => 'sendmail://default',
+//                'encryption' => 'tls',
+                
+//                'streamOptions' => [ 
+//                    'ssl' => [ 
+//                        'allow_self_signed' => true,
+//                        'verify_peer' => false,
+//                        'verify_peer_name' => false,
+//                    ],
+//                ]            
             ]
         ],
     ],

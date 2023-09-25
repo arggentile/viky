@@ -21,6 +21,18 @@ class BeneficiosController extends Controller
         return array_merge(
             parent::behaviors(),
             [
+                'access' => [
+                    'class' => \yii\filters\AccessControl::class,
+                  
+                    'rules' => [
+                        [
+                            
+                            'allow' => true,
+                            'roles' => ['@'],
+                        ],
+                    ],
+                ],
+                
                 'verbs' => [
                     'class' => VerbFilter::className(),
                     'actions' => [
@@ -102,19 +114,20 @@ class BeneficiosController extends Controller
                 if(!$multimediaImagen->save())
                     throw new \yii\web\HttpException(400, "No se pudo grabar la multimedia.");
                 
-                $model->imagen = $multimedia->id;
+                $model->imagen = $multimediaImagen->id;
                         
                 if($model->save()){
                     if(!$model->file->saveAs(\Yii::getAlias('@files') . DIRECTORY_SEPARATOR . $multimedia->id)){
                         throw new \yii\web\HttpException(400, "Error al grabar los adjunto en disco.");
                     }
-                    $directorioImagenes = \Yii::getAlias('@web') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'losbeneficios' . DIRECTORY_SEPARATOR;
+                    $directorioImagenes = \Yii::getAlias('@app') . DIRECTORY_SEPARATOR . 'web' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'losbeneficios' . DIRECTORY_SEPARATOR;
 
-                    if(!$model->fileimagen->saveAs($directorioImagenes . $multimediaImagen->id . $fileimagen->extension )){
+                    if(!$model->fileimagen->saveAs($directorioImagenes . $multimediaImagen->id . ".".$fileimagen->extension )){
                         throw new \yii\web\HttpException(400, "Error al grabar los adjunto en disco.");
                     }
                     
                     $transaction->commit();
+                    return $this->redirect(['index']);
                 }
                 
             } else {
